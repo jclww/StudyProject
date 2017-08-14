@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="learnJDK" />
+        <module name="learnNetty" />
+        <module name="learnShiro" />
+        <module name="myLedis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="learnJDK" target="1.8" />
+      <module name="learnNetty" target="1.8" />
+      <module name="learnShiro" target="1.8" />
+      <module name="myLedis" target="1.8" />
+      <module name="StudyProject" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
