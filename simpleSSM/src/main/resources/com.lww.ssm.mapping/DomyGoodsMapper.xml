@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lww.ssm.dao.DomyGoodsMapper">
+  <resultMap id="BaseResultMap" type="com.lww.ssm.entity.DomyGoods">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="version" jdbcType="BIGINT" property="version" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="last_update_date" jdbcType="TIMESTAMP" property="lastUpdateDate" />
+    <result column="last_update_by" jdbcType="VARCHAR" property="lastUpdateBy" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="caption" jdbcType="VARCHAR" property="caption" />
+    <result column="is_list" jdbcType="BIT" property="isList" />
+    <result column="market_status" jdbcType="INTEGER" property="marketStatus" />
+    <result column="is_top" jdbcType="BIT" property="isTop" />
+    <result column="is_delivery" jdbcType="BIT" property="isDelivery" />
+    <result column="keyword" jdbcType="VARCHAR" property="keyword" />
+    <result column="market_price" jdbcType="DECIMAL" property="marketPrice" />
+    <result column="unit" jdbcType="VARCHAR" property="unit" />
+    <result column="hits" jdbcType="BIGINT" property="hits" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="weight" jdbcType="DECIMAL" property="weight" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="video" jdbcType="VARCHAR" property="video" />
+    <result column="sales" jdbcType="BIGINT" property="sales" />
+    <result column="is_valid" jdbcType="BIT" property="isValid" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="error_image" jdbcType="VARCHAR" property="errorImage" />
+    <result column="override_image" jdbcType="VARCHAR" property="overrideImage" />
+    <result column="product_type" jdbcType="INTEGER" property="productType" />
+    <result column="apply" jdbcType="INTEGER" property="apply" />
+    <result column="apply_explain" jdbcType="VARCHAR" property="applyExplain" />
+    <result column="link" jdbcType="VARCHAR" property="link" />
+    <result column="product_title" jdbcType="VARCHAR" property="productTitle" />
+    <result column="sn" jdbcType="VARCHAR" property="sn" />
+    <result column="platform" jdbcType="VARCHAR" property="platform" />
+    <result column="brand_sn" jdbcType="VARCHAR" property="brandSn" />
+    <result column="is_return" jdbcType="BIT" property="isReturn" />
+    <result column="support_sn" jdbcType="VARCHAR" property="supportSn" />
+    <result column="is_virtual" jdbcType="BIT" property="isVirtual" />
+    <result column="market_up_date" jdbcType="TIMESTAMP" property="marketUpDate" />
+    <result column="market_down_date" jdbcType="TIMESTAMP" property="marketDownDate" />
+    <result column="expect_market_down_date" jdbcType="TIMESTAMP" property="expectMarketDownDate" />
+    <result column="min_price" jdbcType="DECIMAL" property="minPrice" />
+    <result column="max_price" jdbcType="DECIMAL" property="maxPrice" />
+    <result column="delivery_template_sn" jdbcType="VARCHAR" property="deliveryTemplateSn" />
+    <result column="seller_id" jdbcType="VARCHAR" property="sellerId" />
+    <result column="category_tree_path" jdbcType="VARCHAR" property="categoryTreePath" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.lww.ssm.entity.DomyGoodsWithBLOBs">
+    <result column="description" jdbcType="LONGVARCHAR" property="description" />
+    <result column="parameter_values" jdbcType="LONGVARCHAR" property="parameterValues" />
+    <result column="attribute_values" jdbcType="LONGVARCHAR" property="attributeValues" />
+    <result column="product_images" jdbcType="LONGVARCHAR" property="productImages" />
+    <result column="product_videos" jdbcType="LONGVARCHAR" property="productVideos" />
+    <result column="specification_items" jdbcType="LONGVARCHAR" property="specificationItems" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, version, name, create_date, last_update_date, last_update_by, create_by, caption,
+    is_list, market_status, is_top, is_delivery, keyword, market_price, unit, hits, type, 
+    weight, price, image, video, sales, is_valid, remark, error_image, override_image, 
+    product_type, apply, apply_explain, link, product_title, sn, platform, brand_sn, 
+    is_return, support_sn, is_virtual, market_up_date, market_down_date, expect_market_down_date,
+    min_price, max_price, delivery_template_sn, seller_id, category_tree_path
+  </sql>
+  <sql id="Blob_Column_List">
+    description, parameter_values, attribute_values, product_images, product_videos, 
+    specification_items
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from domy_goods
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from domy_goods
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+
+
+  <insert id="createGoods" parameterType="com.lww.ssm.entity.DomyGoodsWithBLOBs">
+    insert into domy_goods(name,create_date,create_by,market_status,is_top,is_valid,product_type,apply,product_title,sn,seller_id)
+    values(#{name},#{createDate}, #{createBy}, #{marketStatus}, #{isTop}, #{isValid}, #{productType}, #{apply}, #{productTitle}, #{sn},#{sellerId})
+  </insert>
+
+  <select id="findAllByLimit" parameterType="java.util.Map" resultType="java.util.Map">
+    select name,sn,product_type,create_date
+    from domy_goods
+    limit #{beginIndex},#{pageCounts}
+  </select>
+  <select id="findBySn" parameterType="java.lang.String" resultType="java.util.Map">
+    select name,sn,product_type,create_date
+    from domy_goods
+    WHERE sn = #{sn}
+  </select>
+  <select id="findDetailBySn" parameterType="java.lang.String" resultType="java.util.Map">
+    select name,sn,product_title
+    from domy_goods
+    WHERE sn = #{sn}
+  </select>
+  <select id="findByName" parameterType="java.lang.String" resultType="java.util.Map">
+    select name,sn,product_type,create_date
+    from domy_goods
+   <!-- WHERE name LIKE CONCAT(CONCAT('%', #{name}), '%'); -->
+    WHERE  INSTR(name ,#{name})>0
+  </select>
+  <select id="findByTime" parameterType="java.util.Map" resultType="java.util.Map">
+    select name,sn,product_type,create_date
+    from domy_goods
+    WHERE <![CDATA[ create_date  >=  #{startTime}  and create_date <=  #{endTime} ]]>
+  </select>
+<delete id="deleteBysn" parameterType="java.lang.String" >
+  delete from domy_goods where sn=#{sn}
+</delete>
+
+  <update id="updateBySn" parameterType="java.util.Map">
+    update domy_goods
+    SET name = #{name},product_title = #{productTitle},last_update_by = #{editBy},last_update_date = #{now}
+    where sn = #{sn}
+  </update>
+
+
+
+
+
+
+
+
+
+
+  <insert id="insert" parameterType="com.lww.ssm.entity.DomyGoodsWithBLOBs">
+    insert into domy_goods (id, version, name, 
+      create_date, last_update_date, last_update_by, 
+      create_by, caption, is_list, 
+      market_status, is_top, is_delivery, 
+      keyword, market_price, unit, 
+      hits, type, weight, 
+      price, image, video, 
+      sales, is_valid, remark, 
+      error_image, override_image, product_type, 
+      apply, apply_explain, link, 
+      product_title, sn, platform, 
+      brand_sn, is_return, support_sn, 
+      is_virtual, market_up_date, market_down_date, 
+      expect_market_down_date, min_price, max_price, 
+      delivery_template_sn, seller_id, category_tree_path, 
+      description, parameter_values, attribute_values, 
+      product_images, product_videos, specification_items
+      )
+    values (#{id,jdbcType=BIGINT}, #{version,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{lastUpdateDate,jdbcType=TIMESTAMP}, #{lastUpdateBy,jdbcType=VARCHAR}, 
+      #{createBy,jdbcType=VARCHAR}, #{caption,jdbcType=VARCHAR}, #{isList,jdbcType=BIT}, 
+      #{marketStatus,jdbcType=INTEGER}, #{isTop,jdbcType=BIT}, #{isDelivery,jdbcType=BIT}, 
+      #{keyword,jdbcType=VARCHAR}, #{marketPrice,jdbcType=DECIMAL}, #{unit,jdbcType=VARCHAR}, 
+      #{hits,jdbcType=BIGINT}, #{type,jdbcType=INTEGER}, #{weight,jdbcType=DECIMAL}, 
+      #{price,jdbcType=DECIMAL}, #{image,jdbcType=VARCHAR}, #{video,jdbcType=VARCHAR}, 
+      #{sales,jdbcType=BIGINT}, #{isValid,jdbcType=BIT}, #{remark,jdbcType=VARCHAR}, 
+      #{errorImage,jdbcType=VARCHAR}, #{overrideImage,jdbcType=VARCHAR}, #{productType,jdbcType=INTEGER}, 
+      #{apply,jdbcType=INTEGER}, #{applyExplain,jdbcType=VARCHAR}, #{link,jdbcType=VARCHAR}, 
+      #{productTitle,jdbcType=VARCHAR}, #{sn,jdbcType=VARCHAR}, #{platform,jdbcType=VARCHAR}, 
+      #{brandSn,jdbcType=VARCHAR}, #{isReturn,jdbcType=BIT}, #{supportSn,jdbcType=VARCHAR}, 
+      #{isVirtual,jdbcType=BIT}, #{marketUpDate,jdbcType=TIMESTAMP}, #{marketDownDate,jdbcType=TIMESTAMP}, 
+      #{expectMarketDownDate,jdbcType=TIMESTAMP}, #{minPrice,jdbcType=DECIMAL}, #{maxPrice,jdbcType=DECIMAL}, 
+      #{deliveryTemplateSn,jdbcType=VARCHAR}, #{sellerId,jdbcType=VARCHAR}, #{categoryTreePath,jdbcType=VARCHAR}, 
+      #{description,jdbcType=LONGVARCHAR}, #{parameterValues,jdbcType=LONGVARCHAR}, #{attributeValues,jdbcType=LONGVARCHAR}, 
+      #{productImages,jdbcType=LONGVARCHAR}, #{productVideos,jdbcType=LONGVARCHAR}, #{specificationItems,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.lww.ssm.entity.DomyGoodsWithBLOBs">
+    insert into domy_goods
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="lastUpdateDate != null">
+        last_update_date,
+      </if>
+      <if test="lastUpdateBy != null">
+        last_update_by,
+      </if>
+      <if test="createBy != null">
+        create_by,
+      </if>
+      <if test="caption != null">
+        caption,
+      </if>
+      <if test="isList != null">
+        is_list,
+      </if>
+      <if test="marketStatus != null">
+        market_status,
+      </if>
+      <if test="isTop != null">
+        is_top,
+      </if>
+      <if test="isDelivery != null">
+        is_delivery,
+      </if>
+      <if test="keyword != null">
+        keyword,
+      </if>
+      <if test="marketPrice != null">
+        market_price,
+      </if>
+      <if test="unit != null">
+        unit,
+      </if>
+      <if test="hits != null">
+        hits,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="weight != null">
+        weight,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="image != null">
+        image,
+      </if>
+      <if test="video != null">
+        video,
+      </if>
+      <if test="sales != null">
+        sales,
+      </if>
+      <if test="isValid != null">
+        is_valid,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+      <if test="errorImage != null">
+        error_image,
+      </if>
+      <if test="overrideImage != null">
+        override_image,
+      </if>
+      <if test="productType != null">
+        product_type,
+      </if>
+      <if test="apply != null">
+        apply,
+      </if>
+      <if test="applyExplain != null">
+        apply_explain,
+      </if>
+      <if test="link != null">
+        link,
+      </if>
+      <if test="productTitle != null">
+        product_title,
+      </if>
+      <if test="sn != null">
+        sn,
+      </if>
+      <if test="platform != null">
+        platform,
+      </if>
+      <if test="brandSn != null">
+        brand_sn,
+      </if>
+      <if test="isReturn != null">
+        is_return,
+      </if>
+      <if test="supportSn != null">
+        support_sn,
+      </if>
+      <if test="isVirtual != null">
+        is_virtual,
+      </if>
+      <if test="marketUpDate != null">
+        market_up_date,
+      </if>
+      <if test="marketDownDate != null">
+        market_down_date,
+      </if>
+      <if test="expectMarketDownDate != null">
+        expect_market_down_date,
+      </if>
+      <if test="minPrice != null">
+        min_price,
+      </if>
+      <if test="maxPrice != null">
+        max_price,
+      </if>
+      <if test="deliveryTemplateSn != null">
+        delivery_template_sn,
+      </if>
+      <if test="sellerId != null">
+        seller_id,
+      </if>
+      <if test="categoryTreePath != null">
+        category_tree_path,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="parameterValues != null">
+        parameter_values,
+      </if>
+      <if test="attributeValues != null">
+        attribute_values,
+      </if>
+      <if test="productImages != null">
+        product_images,
+      </if>
+      <if test="productVideos != null">
+        product_videos,
+      </if>
+      <if test="specificationItems != null">
+        specification_items,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateDate != null">
+        #{lastUpdateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateBy != null">
+        #{lastUpdateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null">
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="caption != null">
+        #{caption,jdbcType=VARCHAR},
+      </if>
+      <if test="isList != null">
+        #{isList,jdbcType=BIT},
+      </if>
+      <if test="marketStatus != null">
+        #{marketStatus,jdbcType=INTEGER},
+      </if>
+      <if test="isTop != null">
+        #{isTop,jdbcType=BIT},
+      </if>
+      <if test="isDelivery != null">
+        #{isDelivery,jdbcType=BIT},
+      </if>
+      <if test="keyword != null">
+        #{keyword,jdbcType=VARCHAR},
+      </if>
+      <if test="marketPrice != null">
+        #{marketPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="unit != null">
+        #{unit,jdbcType=VARCHAR},
+      </if>
+      <if test="hits != null">
+        #{hits,jdbcType=BIGINT},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null">
+        #{weight,jdbcType=DECIMAL},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="image != null">
+        #{image,jdbcType=VARCHAR},
+      </if>
+      <if test="video != null">
+        #{video,jdbcType=VARCHAR},
+      </if>
+      <if test="sales != null">
+        #{sales,jdbcType=BIGINT},
+      </if>
+      <if test="isValid != null">
+        #{isValid,jdbcType=BIT},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="errorImage != null">
+        #{errorImage,jdbcType=VARCHAR},
+      </if>
+      <if test="overrideImage != null">
+        #{overrideImage,jdbcType=VARCHAR},
+      </if>
+      <if test="productType != null">
+        #{productType,jdbcType=INTEGER},
+      </if>
+      <if test="apply != null">
+        #{apply,jdbcType=INTEGER},
+      </if>
+      <if test="applyExplain != null">
+        #{applyExplain,jdbcType=VARCHAR},
+      </if>
+      <if test="link != null">
+        #{link,jdbcType=VARCHAR},
+      </if>
+      <if test="productTitle != null">
+        #{productTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="sn != null">
+        #{sn,jdbcType=VARCHAR},
+      </if>
+      <if test="platform != null">
+        #{platform,jdbcType=VARCHAR},
+      </if>
+      <if test="brandSn != null">
+        #{brandSn,jdbcType=VARCHAR},
+      </if>
+      <if test="isReturn != null">
+        #{isReturn,jdbcType=BIT},
+      </if>
+      <if test="supportSn != null">
+        #{supportSn,jdbcType=VARCHAR},
+      </if>
+      <if test="isVirtual != null">
+        #{isVirtual,jdbcType=BIT},
+      </if>
+      <if test="marketUpDate != null">
+        #{marketUpDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="marketDownDate != null">
+        #{marketDownDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="expectMarketDownDate != null">
+        #{expectMarketDownDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="minPrice != null">
+        #{minPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="maxPrice != null">
+        #{maxPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="deliveryTemplateSn != null">
+        #{deliveryTemplateSn,jdbcType=VARCHAR},
+      </if>
+      <if test="sellerId != null">
+        #{sellerId,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryTreePath != null">
+        #{categoryTreePath,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="parameterValues != null">
+        #{parameterValues,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="attributeValues != null">
+        #{attributeValues,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="productImages != null">
+        #{productImages,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="productVideos != null">
+        #{productVideos,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="specificationItems != null">
+        #{specificationItems,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lww.ssm.entity.DomyGoodsWithBLOBs">
+    update domy_goods
+    <set>
+      <if test="version != null">
+        version = #{version,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateDate != null">
+        last_update_date = #{lastUpdateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateBy != null">
+        last_update_by = #{lastUpdateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null">
+        create_by = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="caption != null">
+        caption = #{caption,jdbcType=VARCHAR},
+      </if>
+      <if test="isList != null">
+        is_list = #{isList,jdbcType=BIT},
+      </if>
+      <if test="marketStatus != null">
+        market_status = #{marketStatus,jdbcType=INTEGER},
+      </if>
+      <if test="isTop != null">
+        is_top = #{isTop,jdbcType=BIT},
+      </if>
+      <if test="isDelivery != null">
+        is_delivery = #{isDelivery,jdbcType=BIT},
+      </if>
+      <if test="keyword != null">
+        keyword = #{keyword,jdbcType=VARCHAR},
+      </if>
+      <if test="marketPrice != null">
+        market_price = #{marketPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="unit != null">
+        unit = #{unit,jdbcType=VARCHAR},
+      </if>
+      <if test="hits != null">
+        hits = #{hits,jdbcType=BIGINT},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null">
+        weight = #{weight,jdbcType=DECIMAL},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="image != null">
+        image = #{image,jdbcType=VARCHAR},
+      </if>
+      <if test="video != null">
+        video = #{video,jdbcType=VARCHAR},
+      </if>
+      <if test="sales != null">
+        sales = #{sales,jdbcType=BIGINT},
+      </if>
+      <if test="isValid != null">
+        is_valid = #{isValid,jdbcType=BIT},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="errorImage != null">
+        error_image = #{errorImage,jdbcType=VARCHAR},
+      </if>
+      <if test="overrideImage != null">
+        override_image = #{overrideImage,jdbcType=VARCHAR},
+      </if>
+      <if test="productType != null">
+        product_type = #{productType,jdbcType=INTEGER},
+      </if>
+      <if test="apply != null">
+        apply = #{apply,jdbcType=INTEGER},
+      </if>
+      <if test="applyExplain != null">
+        apply_explain = #{applyExplain,jdbcType=VARCHAR},
+      </if>
+      <if test="link != null">
+        link = #{link,jdbcType=VARCHAR},
+      </if>
+      <if test="productTitle != null">
+        product_title = #{productTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="sn != null">
+        sn = #{sn,jdbcType=VARCHAR},
+      </if>
+      <if test="platform != null">
+        platform = #{platform,jdbcType=VARCHAR},
+      </if>
+      <if test="brandSn != null">
+        brand_sn = #{brandSn,jdbcType=VARCHAR},
+      </if>
+      <if test="isReturn != null">
+        is_return = #{isReturn,jdbcType=BIT},
+      </if>
+      <if test="supportSn != null">
+        support_sn = #{supportSn,jdbcType=VARCHAR},
+      </if>
+      <if test="isVirtual != null">
+        is_virtual = #{isVirtual,jdbcType=BIT},
+      </if>
+      <if test="marketUpDate != null">
+        market_up_date = #{marketUpDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="marketDownDate != null">
+        market_down_date = #{marketDownDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="expectMarketDownDate != null">
+        expect_market_down_date = #{expectMarketDownDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="minPrice != null">
+        min_price = #{minPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="maxPrice != null">
+        max_price = #{maxPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="deliveryTemplateSn != null">
+        delivery_template_sn = #{deliveryTemplateSn,jdbcType=VARCHAR},
+      </if>
+      <if test="sellerId != null">
+        seller_id = #{sellerId,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryTreePath != null">
+        category_tree_path = #{categoryTreePath,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="parameterValues != null">
+        parameter_values = #{parameterValues,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="attributeValues != null">
+        attribute_values = #{attributeValues,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="productImages != null">
+        product_images = #{productImages,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="productVideos != null">
+        product_videos = #{productVideos,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="specificationItems != null">
+        specification_items = #{specificationItems,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.lww.ssm.entity.DomyGoodsWithBLOBs">
+    update domy_goods
+    set version = #{version,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      last_update_date = #{lastUpdateDate,jdbcType=TIMESTAMP},
+      last_update_by = #{lastUpdateBy,jdbcType=VARCHAR},
+      create_by = #{createBy,jdbcType=VARCHAR},
+      caption = #{caption,jdbcType=VARCHAR},
+      is_list = #{isList,jdbcType=BIT},
+      market_status = #{marketStatus,jdbcType=INTEGER},
+      is_top = #{isTop,jdbcType=BIT},
+      is_delivery = #{isDelivery,jdbcType=BIT},
+      keyword = #{keyword,jdbcType=VARCHAR},
+      market_price = #{marketPrice,jdbcType=DECIMAL},
+      unit = #{unit,jdbcType=VARCHAR},
+      hits = #{hits,jdbcType=BIGINT},
+      type = #{type,jdbcType=INTEGER},
+      weight = #{weight,jdbcType=DECIMAL},
+      price = #{price,jdbcType=DECIMAL},
+      image = #{image,jdbcType=VARCHAR},
+      video = #{video,jdbcType=VARCHAR},
+      sales = #{sales,jdbcType=BIGINT},
+      is_valid = #{isValid,jdbcType=BIT},
+      remark = #{remark,jdbcType=VARCHAR},
+      error_image = #{errorImage,jdbcType=VARCHAR},
+      override_image = #{overrideImage,jdbcType=VARCHAR},
+      product_type = #{productType,jdbcType=INTEGER},
+      apply = #{apply,jdbcType=INTEGER},
+      apply_explain = #{applyExplain,jdbcType=VARCHAR},
+      link = #{link,jdbcType=VARCHAR},
+      product_title = #{productTitle,jdbcType=VARCHAR},
+      sn = #{sn,jdbcType=VARCHAR},
+      platform = #{platform,jdbcType=VARCHAR},
+      brand_sn = #{brandSn,jdbcType=VARCHAR},
+      is_return = #{isReturn,jdbcType=BIT},
+      support_sn = #{supportSn,jdbcType=VARCHAR},
+      is_virtual = #{isVirtual,jdbcType=BIT},
+      market_up_date = #{marketUpDate,jdbcType=TIMESTAMP},
+      market_down_date = #{marketDownDate,jdbcType=TIMESTAMP},
+      expect_market_down_date = #{expectMarketDownDate,jdbcType=TIMESTAMP},
+      min_price = #{minPrice,jdbcType=DECIMAL},
+      max_price = #{maxPrice,jdbcType=DECIMAL},
+      delivery_template_sn = #{deliveryTemplateSn,jdbcType=VARCHAR},
+      seller_id = #{sellerId,jdbcType=VARCHAR},
+      category_tree_path = #{categoryTreePath,jdbcType=VARCHAR},
+      description = #{description,jdbcType=LONGVARCHAR},
+      parameter_values = #{parameterValues,jdbcType=LONGVARCHAR},
+      attribute_values = #{attributeValues,jdbcType=LONGVARCHAR},
+      product_images = #{productImages,jdbcType=LONGVARCHAR},
+      product_videos = #{productVideos,jdbcType=LONGVARCHAR},
+      specification_items = #{specificationItems,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lww.ssm.entity.DomyGoods">
+    update domy_goods
+    set version = #{version,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      last_update_date = #{lastUpdateDate,jdbcType=TIMESTAMP},
+      last_update_by = #{lastUpdateBy,jdbcType=VARCHAR},
+      create_by = #{createBy,jdbcType=VARCHAR},
+      caption = #{caption,jdbcType=VARCHAR},
+      is_list = #{isList,jdbcType=BIT},
+      market_status = #{marketStatus,jdbcType=INTEGER},
+      is_top = #{isTop,jdbcType=BIT},
+      is_delivery = #{isDelivery,jdbcType=BIT},
+      keyword = #{keyword,jdbcType=VARCHAR},
+      market_price = #{marketPrice,jdbcType=DECIMAL},
+      unit = #{unit,jdbcType=VARCHAR},
+      hits = #{hits,jdbcType=BIGINT},
+      type = #{type,jdbcType=INTEGER},
+      weight = #{weight,jdbcType=DECIMAL},
+      price = #{price,jdbcType=DECIMAL},
+      image = #{image,jdbcType=VARCHAR},
+      video = #{video,jdbcType=VARCHAR},
+      sales = #{sales,jdbcType=BIGINT},
+      is_valid = #{isValid,jdbcType=BIT},
+      remark = #{remark,jdbcType=VARCHAR},
+      error_image = #{errorImage,jdbcType=VARCHAR},
+      override_image = #{overrideImage,jdbcType=VARCHAR},
+      product_type = #{productType,jdbcType=INTEGER},
+      apply = #{apply,jdbcType=INTEGER},
+      apply_explain = #{applyExplain,jdbcType=VARCHAR},
+      link = #{link,jdbcType=VARCHAR},
+      product_title = #{productTitle,jdbcType=VARCHAR},
+      sn = #{sn,jdbcType=VARCHAR},
+      platform = #{platform,jdbcType=VARCHAR},
+      brand_sn = #{brandSn,jdbcType=VARCHAR},
+      is_return = #{isReturn,jdbcType=BIT},
+      support_sn = #{supportSn,jdbcType=VARCHAR},
+      is_virtual = #{isVirtual,jdbcType=BIT},
+      market_up_date = #{marketUpDate,jdbcType=TIMESTAMP},
+      market_down_date = #{marketDownDate,jdbcType=TIMESTAMP},
+      expect_market_down_date = #{expectMarketDownDate,jdbcType=TIMESTAMP},
+      min_price = #{minPrice,jdbcType=DECIMAL},
+      max_price = #{maxPrice,jdbcType=DECIMAL},
+      delivery_template_sn = #{deliveryTemplateSn,jdbcType=VARCHAR},
+      seller_id = #{sellerId,jdbcType=VARCHAR},
+      category_tree_path = #{categoryTreePath,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

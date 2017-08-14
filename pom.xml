@@ -13,6 +13,7 @@
         <module>learnNetty</module>
         <module>learnShiro</module>
         <module>myLedis</module>
+        <module>simpleSSM</module>
     </modules>
 
     <properties>

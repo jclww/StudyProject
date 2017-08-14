@@ -10,14 +10,16 @@
         <module name="learnNetty" />
         <module name="learnShiro" />
         <module name="myLedis" />
+        <module name="simpleSSM" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="learnJDK" target="1.8" />
-      <module name="learnNetty" target="1.8" />
-      <module name="learnShiro" target="1.8" />
-      <module name="myLedis" target="1.8" />
-      <module name="StudyProject" target="1.8" />
+      <module name="learnJDK" target="1.5" />
+      <module name="learnNetty" target="1.5" />
+      <module name="learnShiro" target="1.5" />
+      <module name="myLedis" target="1.5" />
+      <module name="simpleSSM" target="1.5" />
+      <module name="StudyProject" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
