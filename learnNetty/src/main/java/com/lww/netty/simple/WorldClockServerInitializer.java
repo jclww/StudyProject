@@ -26,10 +26,12 @@ public class WorldClockServerInitializer extends ChannelInitializer<SocketChanne
         if (sslCtx != null) {
             p.addLast(sslCtx.newHandler(ch.alloc()));
         }
-
+        //处理Tcp发送半包问题
         p.addLast(new ProtobufVarint32FrameDecoder());
+        //负责解码
         p.addLast(new ProtobufDecoder(WorldClockProtocol.Locations.getDefaultInstance()));
 
+        //处理Tcp
         p.addLast(new ProtobufVarint32LengthFieldPrepender());
         p.addLast(new ProtobufEncoder());
 
