@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/learnNetty/learnNetty.iml" filepath="$PROJECT_DIR$/learnNetty/learnNetty.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnShiro/learnShiro.iml" filepath="$PROJECT_DIR$/learnShiro/learnShiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/myLedis/myLedis.iml" filepath="$PROJECT_DIR$/myLedis/myLedis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nettyspring/nettyspring.iml" filepath="$PROJECT_DIR$/nettyspring/nettyspring.iml" />
       <module fileurl="file://$PROJECT_DIR$/simpleSSM/simpleSSM.iml" filepath="$PROJECT_DIR$/simpleSSM/simpleSSM.iml" />
     </modules>
   </component>

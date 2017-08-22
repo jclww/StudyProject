@@ -10,6 +10,7 @@
         <module name="learnNetty" />
         <module name="learnShiro" />
         <module name="myLedis" />
+        <module name="nettyspring" />
         <module name="simpleSSM" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="learnNetty" target="1.8" />
       <module name="learnShiro" target="1.8" />
       <module name="myLedis" target="1.8" />
+      <module name="nettyspring" target="1.8" />
       <module name="simpleSSM" target="1.8" />
       <module name="StudyProject" target="1.8" />
     </bytecodeTargetLevel>

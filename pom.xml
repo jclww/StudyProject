@@ -14,6 +14,7 @@
         <module>learnShiro</module>
         <module>myLedis</module>
         <module>simpleSSM</module>
+        <module>nettyspring</module>
     </modules>
 
     <properties>
