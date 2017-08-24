@@ -1,13 +1,12 @@
-package com.lww.nettyspring.client;
+package com.lww.nettyspring.netty.client;
 
-import com.lww.nettyspring.handle.DomyClientHandle;
+import com.lww.nettyspring.netty.handle.DomyClientHandle;
 import com.lww.nettyspring.protobuf.DomyResMessage;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
-import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.protobuf.ProtobufDecoder;

@@ -1,7 +1,6 @@
 package com.lww.nettyspring;
 
-import com.lww.nettyspring.client.DomyClient;
-import com.lww.nettyspring.server.DomyServer;
+import com.lww.nettyspring.netty.client.DomyClient;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;

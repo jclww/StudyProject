@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="learnDisruptor" />
         <module name="learnJDK" />
         <module name="learnNetty" />
         <module name="learnShiro" />
@@ -15,6 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="learnDisruptor" target="1.8" />
       <module name="learnJDK" target="1.8" />
       <module name="learnNetty" target="1.8" />
       <module name="learnShiro" target="1.8" />

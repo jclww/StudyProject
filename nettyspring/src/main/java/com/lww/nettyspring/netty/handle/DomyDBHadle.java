@@ -1,9 +1,7 @@
-package com.lww.nettyspring.handle;
+package com.lww.nettyspring.netty.handle;
 
-import com.lww.nettyspring.protobuf.DomyReqMessage;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.util.concurrent.EventExecutor;
 
 /**
  * Created by lenovo on 2017/8/21.

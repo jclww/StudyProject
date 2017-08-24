@@ -4066,7 +4066,7 @@
 
             getParsingFlags(config).parsedDateParts = config._a.slice(0);
             getParsingFlags(config).meridiem = config._meridiem;
-            // handle meridiem
+            // executor meridiem
             config._a[HOUR] = meridiemFixWrap(config._locale, config._a[HOUR], config._meridiem);
 
             configFromArray(config);
@@ -5826,7 +5826,7 @@
                 months = this._months + daysToMonths(days);
                 return units === 'month' ? months : months / 12;
             } else {
-                // handle milliseconds separately because of floating point math errors (issue #1867)
+                // executor milliseconds separately because of floating point math errors (issue #1867)
                 days = this._days + Math.round(monthsToDays(this._months));
                 switch (units) {
                     case 'week'   : return days / 7     + milliseconds / 6048e5;
@@ -8974,9 +8974,9 @@
             },
 
             /**
-             * Handle an event
+             * executor an event
              * @private
-             * @param {IEvent} event the event to handle
+             * @param {IEvent} event the event to executor
              * @return {Boolean} true if the chart needs to re-render
              */
             handleEvent: function(e) {
@@ -9227,7 +9227,7 @@
                 var dataset = me.getDataset();
                 var data = dataset.data || (dataset.data = []);
 
-                // In order to correctly handle data addition/deletion animation (an thus simulate
+                // In order to correctly executor data addition/deletion animation (an thus simulate
                 // real-time charts), we need to monitor these data modifications and synchronize
                 // the internal meta data accordingly.
                 if (me._data !== data) {
@@ -9241,7 +9241,7 @@
                 }
 
                 // Re-sync meta data in case the user replaced the data array or if we missed
-                // any updates and so make sure that we handle number of datapoints changing.
+                // any updates and so make sure that we executor number of datapoints changing.
                 me.resyncElements();
             },
 
@@ -12034,7 +12034,7 @@
             },
 
             /**
-             * Handle margins and padding interactions
+             * executor margins and padding interactions
              * @private
              */
             handleMargins: function() {
@@ -12798,7 +12798,7 @@
         // @return : new tooltip item
         function createTooltipItem(element) {
             var xScale = element._xScale;
-            var yScale = element._yScale || element._scale; // handle radar || polarArea charts
+            var yScale = element._yScale || element._scale; // executor radar || polarArea charts
             var index = element._index,
                 datasetIndex = element._datasetIndex;
 
@@ -13493,9 +13493,9 @@
             },
 
             /**
-             * Handle an event
+             * executor an event
              * @private
-             * @param {IEvent} event - The event to handle
+             * @param {IEvent} event - The event to executor
              * @returns {Boolean} true if the tooltip changed
              */
             handleEvent: function(e) {
@@ -13515,7 +13515,7 @@
                 // Remember Last Actives
                 changed = !helpers.arrayEquals(me._active, me._lastActive);
 
-                // If tooltip didn't change, do not handle the target event
+                // If tooltip didn't change, do not executor the target event
                 if (!changed) {
                     return false;
                 }
@@ -14807,7 +14807,7 @@
             reverse: false,
             weight: 1000,
 
-            // a callback that will handle
+            // a callback that will executor
             onClick: function(e, legendItem) {
                 var index = legendItem.datasetIndex;
                 var ci = this.chart;
@@ -15232,9 +15232,9 @@
             },
 
             /**
-             * Handle an event
+             * executor an event
              * @private
-             * @param {IEvent} event - The event to handle
+             * @param {IEvent} event - The event to executor
              * @return {Boolean} true if a change occured
              */
             handleEvent: function(e) {
@@ -15829,7 +15829,7 @@
                 me.min = isFinite(me.min) ? me.min : DEFAULT_MIN;
                 me.max = isFinite(me.max) ? me.max : DEFAULT_MAX;
 
-                // Common base implementation to handle ticks.min, ticks.max, ticks.beginAtZero
+                // Common base implementation to executor ticks.min, ticks.max, ticks.beginAtZero
                 this.handleTickRangeOptions();
             },
             getTickLimit: function() {
@@ -16078,7 +16078,7 @@
                                 if (opts.relativePoints) {
                                     values[index] = 100;
                                 } else {
-                                    // Don't need to split positive and negative since the log scale can't handle a 0 crossing
+                                    // Don't need to split positive and negative since the log scale can't executor a 0 crossing
                                     values[index] += value;
                                 }
                             });
@@ -16606,7 +16606,7 @@
                 me.min = (min === Number.POSITIVE_INFINITY ? 0 : min);
                 me.max = (max === Number.NEGATIVE_INFINITY ? 0 : max);
 
-                // Common base implementation to handle ticks.min, ticks.max, ticks.beginAtZero
+                // Common base implementation to executor ticks.min, ticks.max, ticks.beginAtZero
                 me.handleTickRangeOptions();
             },
             getTickLimit: function() {

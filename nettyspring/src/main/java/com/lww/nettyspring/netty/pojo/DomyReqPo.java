@@ -1,12 +1,13 @@
-package com.lww.nettyspring.pojo;
+package com.lww.nettyspring.netty.pojo;
 
 /**
  * Created by lenovo on 2017/8/21.
  */
-public class DomyResPo {
+public class DomyReqPo {
     private Integer type; //请求类型
     private String mac;   //mac地址
     private String sn;    //sn
+    private String messageBody;//消息体 具体的命令在这个 json字符串中进行传递
 
     public Integer getType() {
         return type;
@@ -30,5 +31,13 @@ public class DomyResPo {
 
     public void setSn(String sn) {
         this.sn = sn;
+    }
+
+    public String getMessageBody() {
+        return messageBody;
+    }
+
+    public void setMessageBody(String messageBody) {
+        this.messageBody = messageBody;
     }
 }

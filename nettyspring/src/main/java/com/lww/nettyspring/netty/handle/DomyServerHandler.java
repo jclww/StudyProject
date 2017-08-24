@@ -1,4 +1,4 @@
-package com.lww.nettyspring.handle;
+package com.lww.nettyspring.netty.handle;
 
 import com.lww.nettyspring.protobuf.DomyReqMessage;
 import com.lww.nettyspring.protobuf.DomyResMessage;

@@ -1,4 +1,4 @@
-package com.lww.nettyspring.handle;
+package com.lww.nettyspring.netty.handle;
 
 import com.lww.nettyspring.protobuf.DomyReqMessage;
 import io.netty.channel.ChannelHandlerContext;
@@ -17,7 +17,7 @@ public class DomyClientHandle extends SimpleChannelInboundHandler {
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, Object o) throws Exception {
         System.out.println("Receive server response : [" + o + "]");
-        ctx.close();
+//        ctx.close();
     }
     private DomyReqMessage.DomyRequest subReq(int i) {
         DomyReqMessage.DomyRequest.Builder builder = DomyReqMessage.DomyRequest

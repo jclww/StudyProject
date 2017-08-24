@@ -1,7 +1,6 @@
 package com.lww.nettyspring;
 
-import com.lww.nettyspring.server.DomyServer;
-import com.lww.nettyspring.server.DomyServerImpl;
+import com.lww.nettyspring.netty.server.DomyServer;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
@@ -12,7 +11,7 @@ import java.io.IOException;
 public class StartServer {
     public static void main(String[] args) throws IOException {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
-//        String s = applicationContext.getResource("classpath:spring.xml").getURI().toString();
+//        String s =   .getResource("classpath:spring.xml").getURI().toString();
 //        System.out.println(s);
 
         DomyServer domyServer = (DomyServer) applicationContext.getBean("domyServer");

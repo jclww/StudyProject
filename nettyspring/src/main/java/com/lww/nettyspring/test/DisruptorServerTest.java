@@ -1,58 +1,73 @@
-package com.lww.nettyspring.server;
+package com.lww.nettyspring.test;
 
-import com.lww.nettyspring.handle.DomyDBHadle;
-import com.lww.nettyspring.handle.DomyServerHandler;
+import com.lww.nettyspring.netty.handle.DomyDBHadle;
+import com.lww.nettyspring.netty.handle.DomyServerHandler;
+import com.lww.nettyspring.netty.handle.TestDisruptorHandle;
+import com.lww.nettyspring.netty.server.DomyServer;
 import com.lww.nettyspring.protobuf.DomyReqMessage;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
+import io.netty.handler.codec.LengthFieldPrepender;
 import io.netty.handler.codec.protobuf.ProtobufDecoder;
 import io.netty.handler.codec.protobuf.ProtobufEncoder;
 import io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder;
 import io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender;
+import io.netty.handler.codec.string.StringDecoder;
+import io.netty.handler.codec.string.StringEncoder;
 import io.netty.util.concurrent.DefaultEventExecutor;
 import io.netty.util.concurrent.EventExecutor;
 
-/**
- * Created by lenovo on 2017/8/21.
- */
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-public class DomyServerImpl implements DomyServer {
-    private EventLoopGroup bossGroup;
-    private EventLoopGroup workerGroup;
-    private ServerBootstrap b;
-    private int port;
+/**
+ * Created by lenovo on 2017/8/23.
+ */
+public class DisruptorServerTest implements DomyServer {
+//    private EventLoopGroup bossGroup;
+//    private EventLoopGroup workerGroup;
+//    private ServerBootstrap b;
+//    private int port;
+private static final ChannelHandler FRAME_PREPENDER = new LengthFieldPrepender(2, false);
+    private static final ChannelHandler STRING_DECODER = new StringDecoder();
+    private static final ChannelHandler STRING_ENCODER = new StringEncoder();
+    private static final ChannelHandler HANDLER = new TestDisruptorHandle();
+
     private Channel acceptorChannel;
+
     public void start() {
 //        System.out.println("hello");
-//        EventLoopGroup bossGroup=new NioEventLoopGroup();
-//        EventLoopGroup workerGroup=new NioEventLoopGroup();
+        EventLoopGroup bossGroup=new NioEventLoopGroup();
+        EventLoopGroup workerGroup=new NioEventLoopGroup();
         EventExecutor e1 = new DefaultEventExecutor();
         try{
             //辅助启动类
-//            ServerBootstrap b =new ServerBootstrap();
+            ServerBootstrap b =new ServerBootstrap();
             b.group(bossGroup,workerGroup)
                     .channel(NioServerSocketChannel.class)
                     .option(ChannelOption.SO_BACKLOG, 1024)
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         public void initChannel(SocketChannel ch) {
-                             ch.pipeline().addLast(
-                             new ProtobufVarint32FrameDecoder());
+                            ch.pipeline().addLast(
+                                    new ProtobufVarint32FrameDecoder());
                             ch.pipeline().addLast(
                                     new ProtobufDecoder(
                                             DomyReqMessage.DomyRequest.getDefaultInstance()));
                             ch.pipeline().addLast(
                                     new ProtobufVarint32LengthFieldPrepender());
                             ch.pipeline().addLast(new ProtobufEncoder());
-                            ch.pipeline().addLast(e1,"DBHandle",new DomyDBHadle());
-                            ch.pipeline().addLast(new DomyServerHandler());
+                            ch.pipeline().addLast(new TestDisruptorHandle());
+//                            ch.pipeline().addLast(new DomyDBHadle());
+
                         }
                     });
             //绑定端口 同步等待成功
-            ChannelFuture f=b.bind(port).sync();  //阻塞绑定监听端口  返回操作通知类
+            ChannelFuture f=b.bind(8888).sync();  //阻塞绑定监听端口  返回操作通知类
             System.out.println("绑定端口 等待客户端长连接");
             //等待服务端监听端口关闭
             acceptorChannel = f.channel();
@@ -64,46 +79,22 @@ public class DomyServerImpl implements DomyServer {
             workerGroup.shutdownGracefully();
         }
     }
-    public void stop()throws  Exception {
-        try{
-            if(acceptorChannel!=null)
-                acceptorChannel.close().addListener(ChannelFutureListener.CLOSE);
-        }finally{
-            //优雅退出，释放线程组资源
-            bossGroup.shutdownGracefully();
-            workerGroup.shutdownGracefully();
-        }
+    public static void main(String[] a) {
+        Thread td =new Thread(new Runnable() {
+            @Override
+            public void run() {
+                new DisruptorServer().start();
+            }
+        });
+        td.start();
+        Thread td2 =new Thread(new Runnable() {
+            @Override
+            public void run() {
+                new DisruptorServerTest().start();
+            }
+        });
+        td2.start();
     }
 
-    public EventLoopGroup getBossGroup() {
-        return bossGroup;
-    }
 
-    public void setBossGroup(EventLoopGroup bossGroup) {
-        this.bossGroup = bossGroup;
-    }
-
-    public EventLoopGroup getWorkerGroup() {
-        return workerGroup;
-    }
-
-    public void setWorkerGroup(EventLoopGroup workerGroup) {
-        this.workerGroup = workerGroup;
-    }
-
-    public ServerBootstrap getB() {
-        return b;
-    }
-
-    public void setB(ServerBootstrap b) {
-        this.b = b;
-    }
-
-    public int getPort() {
-        return port;
-    }
-
-    public void setPort(int port) {
-        this.port = port;
-    }
 }
