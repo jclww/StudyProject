@@ -16,6 +16,7 @@
         <module>simpleSSM</module>
         <module>nettyspring</module>
         <module>learnDisruptor</module>
+        <module>domy-netty</module>
     </modules>
 
     <properties>
