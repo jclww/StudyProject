@@ -12,31 +12,57 @@ import io.netty.channel.Channel;
  */
 
 public class DomyForwardExecutor implements BaseExecutor {
-    private Channel ch;
+    private Channel channel;
+    private Channel clientChannel;
     private DomyReqMessage.DomyRequest info;
     public DomyForwardExecutor(Channel ch, DomyReqMessage.DomyRequest info) {
-        this.ch = ch;
+        this.channel = ch;
         this.info = info;
     }
 
     @Override
     public void onExecute() {
-        String key = info.getMac()+info.getSn();
-        this.ch = BaseDisruptorAdapterHandler.MACSNS_CHANNEL.get(key);
+        if (info == null)
+            return ;
+        this.clientChannel = getClientChannelByKey();
         System.out.println("MACSNS_CHANNEL: "+ BaseDisruptorAdapterHandler.MACSNS_CHANNEL.size());
 
-//        System.out.println("key: "+key);
-        if (null == info) {
-            throw new NullPointerException("msg");
+        if (clientChannel != null && clientChannel.isActive()) {
+            DomyResMessage.DomyResponse.Builder builder = DomyResMessage.DomyResponse.newBuilder();
+            //直接将服务器推送消息传递给Client
+            builder.setMessage(info.getMessageBody());
+            clientChannel.writeAndFlush(builder);
+        } else {
+            DomyResMessage.DomyResponse.Builder builder = DomyResMessage.DomyResponse.newBuilder();
+            //Client下线或者不存在时返回消息给Service
+            builder.setMessage(info.getMessageBody());
+            channel.writeAndFlush(builder);
         }
+
+    }
+
+    private Channel getClientChannelByKey() {
+        String key = info.getMac()+info.getSn();
+        return BaseDisruptorAdapterHandler.MACSNS_CHANNEL.get(key);
+    }
+
+    protected DomyResMessage.DomyResponse.Builder successMessage() {
         DomyResMessage.DomyResponse.Builder builder = DomyResMessage.DomyResponse.newBuilder();
+        //直接将服务器推送消息传递给Client
         builder.setMessage(info.getMessageBody());
-        ch.writeAndFlush(builder);
+        return builder;
+    }
+
+    protected DomyResMessage.DomyResponse.Builder errorMessage() {
+        DomyResMessage.DomyResponse.Builder builder = DomyResMessage.DomyResponse.newBuilder();
+        builder.setMessage("Welcome to Domy netty !!!");
+        return builder;
     }
 
     @Override
     public void release() {
-        this.ch = null;
+        this.channel = null;
+        this.clientChannel = null;
         this.info = null;
     }
 }

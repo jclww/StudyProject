@@ -1,7 +1,5 @@
 package com.hiveview.netty.client;
 
-import com.hiveview.netty.server.DomyDisruptorServer;
-import com.hiveview.netty.server.DomyServer;
 import com.hiveview.protobuf.DomyReqMessage;
 import com.hiveview.protobuf.DomyResMessage;
 import io.netty.bootstrap.Bootstrap;

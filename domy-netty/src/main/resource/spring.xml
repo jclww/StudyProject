@@ -3,26 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <!--每次赋值都需要new一个，所以加上prototype-->
-    <!--<bean id="eventLoopGroup" class="io.netty.channel.nio.NioEventLoopGroup" scope="prototype">-->
-    <!--</bean>-->
-    <!--<bean id="serverBootstrap" class="io.netty.bootstrap.ServerBootstrap" scope="prototype"></bean>-->
-    <!---->
-    <!--<bean id="domyServer" class="com.lww.nettyspring.netty.server.DomyServerImpl">-->
-        <!--<property name="bossGroup" ref="eventLoopGroup"></property>-->
-        <!--<property name="workerGroup" ref="eventLoopGroup"></property>-->
-        <!--<property name="b" ref="serverBootstrap"></property>-->
-        <!--<property name="port" value="8888"></property>-->
-    <!--</bean>-->
+    <bean id="domyServer" class="com.hiveview.netty.services.DomyDisruptorServer" init-method="start">
+        <constructor-arg name="port" value="8888"/>
+    </bean>
 
-    <!---->
-    <!--<bean id="clientBootStrap" class="io.netty.bootstrap.Bootstrap"></bean>-->
-    <!--<bean id="clientHandle" class="com.lww.nettyspring.netty.handle.DomyClientHandle"></bean>-->
-    <!--<bean id="domyClient" class="com.lww.nettyspring.netty.client.DomyClientImpl">-->
-        <!--<property name="group" ref="eventLoopGroup"></property>-->
-        <!--<property name="domyClientHandle" ref="clientHandle"></property>-->
-        <!--<property name="b" ref="clientBootStrap"></property>-->
-        <!--<property name="host" value="localhost"></property>-->
-        <!--<property name="port" value="8888"></property>-->
-    <!--</bean>-->
+
 </beans>

@@ -45,14 +45,14 @@ public final class SecureChatClient {
                     break;
                 }
 
-                // Sends the received line to the server.
+                // Sends the received line to the services.
                 if (ch.isActive()) {
                     lastWriteFuture = ch.writeAndFlush(line + "\r\n");
                 } else {
                     System.out.println("服务器端开连接");
                     break;
                 }
-                // If user typed the 'bye' command, wait until the server closes
+                // If user typed the 'bye' command, wait until the services closes
                 // the connection.
                 if ("bye".equals(line.toLowerCase())) {
                     ch.closeFuture().sync();

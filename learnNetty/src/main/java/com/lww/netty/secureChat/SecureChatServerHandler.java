@@ -29,7 +29,7 @@ public class SecureChatServerHandler extends SimpleChannelInboundHandler<String>
                     @Override
                     public void operationComplete(Future<Channel> future) throws Exception {
                         ctx.writeAndFlush(
-                                "Welcome to " + InetAddress.getLocalHost().getHostName() + " secure chat service!\n");
+                                "Welcome to " + InetAddress.getLocalHost().getHostName() + " secure chat services!\n");
                         ctx.writeAndFlush(
                                 "Your session is protected by " +
                                         ctx.pipeline().get(SslHandler.class).engine().getSession().getCipherSuite() +

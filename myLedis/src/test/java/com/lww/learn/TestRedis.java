@@ -14,11 +14,11 @@ public class TestRedis {
         Jedis jedis= new Jedis("172.16.0.89",6379);
         jedis.auth("hiveview");
 
-        String s = jedis.hget("redis:counts","172.16.0.89");
+//        String s = jedis.hget("redis:counts","172.16.0.89");
 
         System.out.println(jedis.info());
 
-        jedis.hincrBy("redis:counts","172.16.0.89",1);
+//        jedis.hincrBy("redis:counts","172.16.0.89",1);
 //        System.out.println(jedis.hget("redis:counts","172.16.0.89"));
 
 //        TestRedis.getMemoryInfo(jedis);

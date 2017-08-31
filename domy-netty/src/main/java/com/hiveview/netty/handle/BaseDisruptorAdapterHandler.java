@@ -5,6 +5,7 @@ import com.hiveview.disruptor.event.factory.DomyEventFactory;
 import com.hiveview.disruptor.eventExecutor.BaseExecutor;
 import com.hiveview.disruptor.eventHandle.DomyHandle;
 import com.hiveview.protobuf.DomyReqMessage;
+import com.hiveview.protobuf.DomyResMessage;
 import com.lmax.disruptor.BlockingWaitStrategy;
 import com.lmax.disruptor.RingBuffer;
 import com.lmax.disruptor.dsl.Disruptor;
@@ -53,28 +54,56 @@ public abstract class BaseDisruptorAdapterHandler<O> extends SimpleChannelInboun
 
     }
 
+    /**
+     * 处理各类请求(1、登录 2、客户端发送的消息 3、大麦service消息)
+     * @param ctx
+     * @param msg
+     * @throws Exception
+     */
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, O msg) throws Exception {
         DomyReqMessage.DomyRequest info = (DomyReqMessage.DomyRequest)msg;
         //登录消息
         if (info.getType() == 1) {
-            String key = info.getMac()+info.getSn();
-            MACSNS_CHANNEL.put(key, ctx.channel());
-            CHANNEL_MACSNS.put(ctx.channel().id().asLongText(), key);
-            ctx.writeAndFlush("");
-            ctx.fireChannelRead(msg);
-        } else {
-            RingBuffer<DomyEvent> ringBuffer = THREAD_LOCAL.get().getRingBuffer();
-            long next = ringBuffer.next();
-            try {
-                DomyEvent commandEvent = ringBuffer.get(next);
-                commandEvent.setValues(newExecutor(ctx.channel(), msg));
-            } finally {
-                ringBuffer.publish(next);
-            }
+            doLoginMessage(ctx,msg);
         }
-
+        //客户端请求
+        if (info.getType() == 2) {
+            doClientMessage();
+        }
+        //大麦Services发送的消息(推送)
+        if (info.getType() == 3) {
+            doDomyServiceSendMessage(ctx, msg);
+        }
     }
+
+    private void doLoginMessage(ChannelHandlerContext ctx, O msg) {
+        DomyReqMessage.DomyRequest info = (DomyReqMessage.DomyRequest)msg;
+        String key = info.getMac()+info.getSn();
+        MACSNS_CHANNEL.put(key, ctx.channel());
+        CHANNEL_MACSNS.put(ctx.channel().id().asLongText(), key);
+        DomyResMessage.DomyResponse.Builder returnMessage = returnMessage();
+        ctx.writeAndFlush(returnMessage);
+//        ctx.fireChannelRead(msg);
+    }
+
+    private void doClientMessage() {
+        //未做
+    }
+
+    private void doDomyServiceSendMessage(ChannelHandlerContext ctx, O msg) {
+        RingBuffer<DomyEvent> ringBuffer = THREAD_LOCAL.get().getRingBuffer();
+        long next = ringBuffer.next();
+        try {
+            DomyEvent commandEvent = ringBuffer.get(next);
+            commandEvent.setValues(newExecutor(ctx.channel(), msg));
+        } finally {
+            ringBuffer.publish(next);
+        }
+    }
+
+    protected abstract DomyResMessage.DomyResponse.Builder returnMessage();
+
     protected abstract BaseExecutor newExecutor(Channel ch, O msg);
 
     @Override

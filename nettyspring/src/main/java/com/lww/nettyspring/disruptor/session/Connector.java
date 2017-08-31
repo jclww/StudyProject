@@ -33,7 +33,7 @@ public interface Connector<S extends BaseSession> {
     void sessionActive();
 
     /**
-     * When the player lost connection to server. System will call this function.
+     * When the player lost connection to services. System will call this function.
      */
     void sessionInactive();
 }

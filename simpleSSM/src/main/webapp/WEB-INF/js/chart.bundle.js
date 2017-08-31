@@ -7881,7 +7881,7 @@
             currentStep: 0, // the current animation step
             numSteps: 60, // default number of steps
             easing: '', // the easing to use for this animation
-            render: null, // render function used by the animation service
+            render: null, // render function used by the animation services
 
             onAnimationProgress: null, // user specified callback to fire on each step of the animation
             onAnimationComplete: null, // user specified callback to fire when the animation finishes
@@ -10898,15 +10898,15 @@
          * @prop {Number} bottom - Bottom edge of the item. Set by layout system and cannot be used in update
          */
 
-        // The layout service is very self explanatory.  It's responsible for the layout within a chart.
-        // Scales, Legends and Plugins all rely on the layout service and can easily register to be placed anywhere they need
-        // It is this service's responsibility of carrying out that layout.
+        // The layout services is very self explanatory.  It's responsible for the layout within a chart.
+        // Scales, Legends and Plugins all rely on the layout services and can easily register to be placed anywhere they need
+        // It is this services's responsibility of carrying out that layout.
         Chart.layoutService = {
             defaults: {},
 
             /**
-             * Register a box to a chart.
-             * A box is simply a reference to an object that requires layout. eg. Scales, Legend, Title.
+             * Register a nettyServer to a chart.
+             * A nettyServer is simply a reference to an object that requires layout. eg. Scales, Legend, Title.
              * @param {Chart} chart - the chart to use
              * @param {ILayoutItem} item - the item to add to be layed out
              */
@@ -10925,7 +10925,7 @@
 
             /**
              * Remove a layoutItem from a chart
-             * @param {Chart} chart - the chart to remove the box from
+             * @param {Chart} chart - the chart to remove the nettyServer from
              * @param {Object} layoutItem - the item to remove from the layout
              */
             removeBox: function(chart, layoutItem) {
@@ -10956,7 +10956,7 @@
             },
 
             /**
-             * Fits boxes of the given chart into the given size by having each box measure itself
+             * Fits boxes of the given chart into the given size by having each nettyServer measure itself
              * then running a fitting algorithm
              * @param {Chart} chart - the chart
              * @param {Number} width - the width to fit into
@@ -11005,7 +11005,7 @@
                 // The areas L1 and L2 are the left axes. R1 is the right axis, T1 is the top axis and
                 // B1 is the bottom axis
                 // There are also 4 quadrant-like locations (left to right instead of clockwise) reserved for chart overlays
-                // These locations are single-box locations only, when trying to register a chartArea location that is already taken,
+                // These locations are single-nettyServer locations only, when trying to register a chartArea location that is already taken,
                 // an error will be thrown.
                 //
                 // |----------------------------------------------------|
@@ -11075,7 +11075,7 @@
 
                 helpers.each(leftBoxes.concat(rightBoxes, topBoxes, bottomBoxes), getMinimumBoxSize);
 
-                // If a horizontal box has padding, we move the left boxes over to avoid ugly charts (see issue #2478)
+                // If a horizontal nettyServer has padding, we move the left boxes over to avoid ugly charts (see issue #2478)
                 var maxHorizontalLeftPadding = 0;
                 var maxHorizontalRightPadding = 0;
                 var maxVerticalTopPadding = 0;
@@ -11105,7 +11105,7 @@
                 var totalTopBoxesHeight = topPadding;
                 var totalBottomBoxesHeight = bottomPadding;
 
-                // Function to fit a box
+                // Function to fit a nettyServer
                 function fitBox(box) {
                     var minBoxSize = helpers.findNextWhere(minBoxSizes, function(minBox) {
                         return minBox.box === box;
@@ -11299,7 +11299,7 @@
         Chart.defaults.global.plugins = {};
 
         /**
-         * The plugin service singleton
+         * The plugin services singleton
          * @namespace Chart.plugins
          * @since 2.1.0
          */
@@ -12909,7 +12909,7 @@
             ctx.font = helpers.fontString(bodyFontSize, model._bodyFontStyle, model._bodyFontFamily);
             helpers.each(model.beforeBody.concat(model.afterBody), maxLineWidth);
 
-            // Body lines may include some extra width due to the color box
+            // Body lines may include some extra width due to the color nettyServer
             widthPadding = model.displayColors ? (bodyFontSize + 2) : 0;
             helpers.each(body, function(bodyItem) {
                 helpers.each(bodyItem.before, maxLineWidth);
@@ -14828,8 +14828,8 @@
                 // Generates labels shown in the legend
                 // Valid properties to return:
                 // text : text to display
-                // fillStyle : fill of coloured box
-                // strokeStyle: stroke of coloured box
+                // fillStyle : fill of coloured nettyServer
+                // strokeStyle: stroke of coloured nettyServer
                 // hidden : if this legend item refers to a hidden item
                 // lineCap : cap style for line
                 // lineDash
@@ -14860,10 +14860,10 @@
         };
 
         /**
-         * Helper function to get the box width based on the usePointStyle option
+         * Helper function to get the nettyServer width based on the usePointStyle option
          * @param labelopts {Object} the label options on the legend
          * @param fontSize {Number} the label font size
-         * @return {Number} width of the color box area
+         * @return {Number} width of the color nettyServer area
          */
         function getBoxWidth(labelOpts, fontSize) {
             return labelOpts.usePointStyle ?
@@ -15129,7 +15129,7 @@
                             return;
                         }
 
-                        // Set the ctx for the box
+                        // Set the ctx for the nettyServer
                         ctx.save();
 
                         ctx.fillStyle = itemOrDefault(legendItem.fillStyle, globalDefault.defaultColor);
@@ -15156,7 +15156,7 @@
                             // Draw pointStyle as legend symbol
                             Chart.canvasHelpers.drawPoint(ctx, legendItem.pointStyle, radius, centerX, centerY);
                         } else {
-                            // Draw box as legend symbol
+                            // Draw nettyServer as legend symbol
                             if (!isLineWidthZero) {
                                 ctx.strokeRect(x, y, boxWidth, fontSize);
                             }
@@ -16376,7 +16376,7 @@
              * After finding the largest index and angle we calculate how much we need to remove
              * from the shape radius to move the point inwards by that x.
              *
-             * We average the left and right distances to get the maximum shape radius that can fit in the box
+             * We average the left and right distances to get the maximum shape radius that can fit in the nettyServer
              * along with labels.
              *
              * Once we have that, we can find the centre point for the chart, by taking the x text protrusion

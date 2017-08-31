@@ -115,7 +115,7 @@ public final class RedisProtocol {
         while (offset < len) {
             final int size = is.read(read, offset, (len - offset));
             if (size == -1) throw new LedisConnectionException(
-                    "It seems like server has closed the connection.");
+                    "It seems like services has closed the connection.");
             offset += size;
         }
 

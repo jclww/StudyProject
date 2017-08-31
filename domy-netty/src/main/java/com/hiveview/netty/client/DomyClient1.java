@@ -1,6 +1,5 @@
 package com.hiveview.netty.client;
 
-import com.hiveview.netty.server.DomyDisruptorServer;
 import com.hiveview.protobuf.DomyReqMessage;
 import com.hiveview.protobuf.DomyResMessage;
 import io.netty.bootstrap.Bootstrap;
@@ -17,6 +16,12 @@ import io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender;
  * Created by Lww on 2017/8/24.
  */
 public class DomyClient1 implements DomyClient {
+    private int port;
+    private Channel ch;
+
+    public DomyClient1(int port) {
+        this.port = port;
+    }
 
     @Override
     public void start() {
@@ -67,8 +72,8 @@ public class DomyClient1 implements DomyClient {
 
             // 发起异步连接操作
             ChannelFuture f = null;
-            f = b.connect("localhost", 8888).sync();
-
+            f = b.connect("localhost", port).sync();
+            ch = f.channel();
             // 当代客户端链路关闭
             f.channel().closeFuture().sync();
         } catch (InterruptedException e) {
@@ -78,7 +83,15 @@ public class DomyClient1 implements DomyClient {
             group.shutdownGracefully();
         }
     }
-    public static void main(String[] a) {
-        new DomyClient1().start();
+    public void sendMessage(DomyReqMessage.DomyRequest.Builder req) {
+        if (ch == null && ch.isActive()) {
+            ch.writeAndFlush(req);
+        }
+        else {
+            System.out.println("您与服务器已经断开连接！！");
+        }
     }
+//    public static void main(String[] a) {
+//        new DomyClient1().start();
+//    }
 }

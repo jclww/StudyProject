@@ -1,4 +1,4 @@
-package com.hiveview.netty.server;
+package com.hiveview.netty.services;
 
 import com.hiveview.netty.handle.DomyServerHandle;
 import com.hiveview.protobuf.DomyReqMessage;
@@ -19,9 +19,14 @@ import io.netty.util.concurrent.EventExecutor;
  */
 public class DomyDisruptorServer implements DomyServer{
     private static final ChannelHandler FPROTOBUF_PREPENDER = new ProtobufVarint32LengthFieldPrepender();
-    private static final ChannelHandler PROTOBUF_DECODER = new ProtobufVarint32FrameDecoder();
+//    private static final ChannelHandler PROTOBUF_DECODER = new ProtobufVarint32FrameDecoder();
     private static final ChannelHandler PROTOBUF_ENCODER = new ProtobufEncoder();
     private static final ChannelHandler SERVER_HANDLER = new DomyServerHandle();
+    private int port;
+    public DomyDisruptorServer(int port) {
+        this.port = port;
+    }
+
     @Override
     public void start() {
         EventLoopGroup bossGroup=new NioEventLoopGroup();
@@ -47,7 +52,7 @@ public class DomyDisruptorServer implements DomyServer{
                         }
                     });
             //绑定端口 同步等待成功
-            ChannelFuture f=b.bind(8888).sync();  //阻塞绑定监听端口  返回操作通知类
+            ChannelFuture f=b.bind(port).sync();  //阻塞绑定监听端口  返回操作通知类
             System.out.println("绑定端口 等待客户端长连接");
             //等待服务端监听端口关闭
 //            acceptorChannel = f.channel();
@@ -60,6 +65,6 @@ public class DomyDisruptorServer implements DomyServer{
         }
     }
     public static void main(String[] a) {
-        new DomyDisruptorServer().start();
+        new DomyDisruptorServer(8888).start();
     }
 }

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message DomyRequest {
+int32 type = 1;
+string mac = 2;
+string sn = 3;
+string messageBody = 4;
+}

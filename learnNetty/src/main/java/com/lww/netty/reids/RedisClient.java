@@ -55,7 +55,7 @@ public class RedisClient {
                 } else if (line.isEmpty()) { // skip `enter` or `enter` with spaces.
                     continue;
                 }
-                // Sends the received line to the server.
+                // Sends the received line to the services.
                 lastWriteFuture = ch.writeAndFlush(line);
                 lastWriteFuture.addListener(new GenericFutureListener<ChannelFuture>() {
                     @Override
