@@ -17,6 +17,7 @@
         <module>nettyspring</module>
         <module>learnDisruptor</module>
         <module>domy-netty</module>
+        <module>bookRead</module>
     </modules>
 
     <properties>

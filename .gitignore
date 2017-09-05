@@ -1,2 +1,4 @@
 .idea/libraries/*
 */target/*
+.idea/artifacts/bookRead_war.xml
+.idea/artifacts/bookRead_war_exploded.xml

@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bookRead" />
         <module name="domy-netty" />
         <module name="domynetty" />
         <module name="learnDisruptor" />
@@ -18,6 +19,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="bookRead" target="1.8" />
       <module name="domy-netty" target="1.8" />
       <module name="learnDisruptor" target="1.8" />
       <module name="learnJDK" target="1.8" />
