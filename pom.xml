@@ -17,7 +17,9 @@
         <module>nettyspring</module>
         <module>learnDisruptor</module>
         <module>domy-netty</module>
-        <module>bookRead</module>
+        <module>springLearn</module>
+        <module>learnLog</module>
+        <module>swaggerui</module>
     </modules>
 
     <properties>
