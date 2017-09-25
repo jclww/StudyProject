@@ -12,6 +12,7 @@
         <module name="learnDisruptor" />
         <module name="learnJDK" />
         <module name="learnLog" />
+        <module name="learnMail" />
         <module name="learnNetty" />
         <module name="learnShiro" />
         <module name="myLedis" />
@@ -27,6 +28,7 @@
       <module name="learnDisruptor" target="1.8" />
       <module name="learnJDK" target="1.8" />
       <module name="learnLog" target="1.8" />
+      <module name="learnMail" target="1.8" />
       <module name="learnNetty" target="1.8" />
       <module name="learnShiro" target="1.8" />
       <module name="myLedis" target="1.8" />

@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/learnDisruptor/learnDisruptor.iml" filepath="$PROJECT_DIR$/learnDisruptor/learnDisruptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnJDK/learnJDK.iml" filepath="$PROJECT_DIR$/learnJDK/learnJDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnLog/learnLog.iml" filepath="$PROJECT_DIR$/learnLog/learnLog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learnMail/learnMail.iml" filepath="$PROJECT_DIR$/learnMail/learnMail.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnNetty/learnNetty.iml" filepath="$PROJECT_DIR$/learnNetty/learnNetty.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnShiro/learnShiro.iml" filepath="$PROJECT_DIR$/learnShiro/learnShiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/myLedis/myLedis.iml" filepath="$PROJECT_DIR$/myLedis/myLedis.iml" />

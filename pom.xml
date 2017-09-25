@@ -20,6 +20,7 @@
         <module>springLearn</module>
         <module>learnLog</module>
         <module>swaggerui</module>
+        <module>learnMail</module>
     </modules>
 
     <properties>
