@@ -1,4 +1,5 @@
-package com.lww.learnMail;
+package com.lww.mail;
+
 import com.sun.mail.util.MailSSLSocketFactory;
 
 import javax.mail.Message;
@@ -29,19 +30,19 @@ public class Main {
 
         Properties prop = new Properties();
 // 开启debug调试，以便在控制台查看
-//        prop.setProperty("mail.debug", "true");
+        prop.setProperty("mail.debug", "true");
 // 设置邮件服务器主机名
         prop.setProperty("mail.host", myEmailSMTPHost);
 // 发送服务器需要身份验证
         prop.setProperty("mail.smtp.auth", "true");
 // 发送邮件协议名称
         prop.setProperty("mail.transport.protocol", "smtp");
-
+//        prop.put("mail.smtp.port", 25);
         // 开启SSL加密，否则会失败
-//        MailSSLSocketFactory sf = new MailSSLSocketFactory();
-//        sf.setTrustAllHosts(true);
-//        prop.put("mail.smtp.ssl.enable", "true");
-//        prop.put("mail.smtp.ssl.socketFactory", sf);
+        MailSSLSocketFactory sf = new MailSSLSocketFactory();
+        sf.setTrustAllHosts(true);
+        prop.put("mail.smtp.ssl.enable", "true");
+        prop.put("mail.smtp.ssl.socketFactory", sf);
 
         // 创建session
         Session session = Session.getInstance(prop);
@@ -80,7 +81,7 @@ public class Main {
         message.setSubject("打折钜惠", "UTF-8");
 
         // 5. Content: 邮件正文（可以使用html标签）
-        message.setContent("test", "text/html;charset=UTF-8");
+        message.setContent("XX用户你好, 今天全场5折, 快来抢购, 错过今天再等一年。。。", "text/html;charset=UTF-8");
 
         // 6. 设置发件时间
         message.setSentDate(new Date());
