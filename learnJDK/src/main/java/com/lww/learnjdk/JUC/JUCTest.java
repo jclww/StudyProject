@@ -8,6 +8,11 @@ import java.util.concurrent.Executors;
  */
 public class JUCTest {
     public static void main(String[] a) {
-        ExecutorService service = Executors.newCachedThreadPool();
+        ExecutorService cachedService = Executors.newCachedThreadPool();
+        ExecutorService fixedService = Executors.newFixedThreadPool(16);
+        ExecutorService scheduledService = Executors.newScheduledThreadPool(8);
+        ExecutorService singleService = Executors.newSingleThreadExecutor();
+
+
     }
 }

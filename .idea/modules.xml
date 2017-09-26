@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/StudyProject.iml" filepath="$PROJECT_DIR$/StudyProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/domy-netty/domy-netty.iml" filepath="$PROJECT_DIR$/domy-netty/domy-netty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learnAlgorithm/learnAlgorithm.iml" filepath="$PROJECT_DIR$/learnAlgorithm/learnAlgorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnDisruptor/learnDisruptor.iml" filepath="$PROJECT_DIR$/learnDisruptor/learnDisruptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnJDK/learnJDK.iml" filepath="$PROJECT_DIR$/learnJDK/learnJDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnLog/learnLog.iml" filepath="$PROJECT_DIR$/learnLog/learnLog.iml" />
@@ -12,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/myLedis/myLedis.iml" filepath="$PROJECT_DIR$/myLedis/myLedis.iml" />
       <module fileurl="file://$PROJECT_DIR$/nettyspring/nettyspring.iml" filepath="$PROJECT_DIR$/nettyspring/nettyspring.iml" />
       <module fileurl="file://$PROJECT_DIR$/simpleSSM/simpleSSM.iml" filepath="$PROJECT_DIR$/simpleSSM/simpleSSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smsbao/smsbao.iml" filepath="$PROJECT_DIR$/smsbao/smsbao.iml" />
       <module fileurl="file://$PROJECT_DIR$/springLearn/springLearn.iml" filepath="$PROJECT_DIR$/springLearn/springLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/swaggerui/swaggerui.iml" filepath="$PROJECT_DIR$/swaggerui/swaggerui.iml" />
     </modules>

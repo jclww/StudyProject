@@ -73,14 +73,14 @@ public class Main {
         message.setFrom(new InternetAddress(sendMail, "某宝网", "UTF-8"));
 
         // 3. To: 收件人（可以增加多个收件人、抄送、密送）
-        message.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress("liweiwei6@btte.net", "XX用户", "UTF-8"));
+//        message.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress("liweiwei6@btte.net", "XX用户", "UTF-8"));
         message.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress("1377877153@qq.com", "XX用户", "UTF-8"));
 
         // 4. Subject: 邮件主题
         message.setSubject("打折钜惠", "UTF-8");
 
         // 5. Content: 邮件正文（可以使用html标签）
-        message.setContent("XX用户你好, 今天全场5折, 快来抢购, 错过今天再等一年。。。", "text/html;charset=UTF-8");
+        message.setContent("test", "text/html;charset=UTF-8");
 
         // 6. 设置发件时间
         message.setSentDate(new Date());

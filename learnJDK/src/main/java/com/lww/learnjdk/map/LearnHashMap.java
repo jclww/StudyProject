@@ -1,4 +1,4 @@
-package com.lww.learnjdk;
+package com.lww.learnjdk.map;
 
 import java.util.HashMap;
 

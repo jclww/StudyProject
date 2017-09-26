@@ -8,7 +8,7 @@ import com.lmax.disruptor.EventHandler;
 public class LongEventHandler implements EventHandler<LongEvent>
 {
     public void onEvent(LongEvent event, long sequence, boolean endOfBatch) throws InterruptedException {
-        Thread.sleep(3000);
-        System.out.println("Event: " + event.getValue()+"sequence: "+sequence+"endOfBatch: "+endOfBatch);
-    }
+    Thread.sleep(3000);
+    System.out.println("Event: " + event.getValue()+"sequence: "+sequence+"endOfBatch: "+endOfBatch);
+}
 }

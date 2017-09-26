@@ -10,7 +10,7 @@ public final class WorldClockProtocol {
             com.google.protobuf.ExtensionRegistry registry) {
     }
     /**
-     * Protobuf enum {@code com.lww.netty.simple.Continent}
+     * Protobuf global {@code com.lww.netty.simple.Continent}
      */
     public enum Continent
             implements com.google.protobuf.ProtocolMessageEnum {
@@ -173,7 +173,7 @@ public final class WorldClockProtocol {
     }
 
     /**
-     * Protobuf enum {@code com.lww.netty.simple.DayOfWeek}
+     * Protobuf global {@code com.lww.netty.simple.DayOfWeek}
      */
     public enum DayOfWeek
             implements com.google.protobuf.ProtocolMessageEnum {

@@ -1,6 +1,9 @@
 package com.lww.spring.learn;
 
+import com.lww.spring.learn.bean.BaseMailBean;
 import com.lww.spring.learn.bean.TestBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -12,5 +15,9 @@ public class BeanFactoryL {
                 ClassPathXmlApplicationContext("spring.xml");
         TestBean testBean = (TestBean)context.getBean("testBean");
         testBean.method();
+        BeanFactoryL a = new BeanFactoryL();
+        BaseMailBean mailBean = (BaseMailBean) context.getBean("mailBean");
+        System.out.println(mailBean.getProtocol());
+
     }
 }

@@ -20,6 +20,8 @@
         <module>springLearn</module>
         <module>learnLog</module>
         <module>swaggerui</module>
+        <module>smsbao</module>
+        <module>learnAlgorithm</module>
     </modules>
 
     <properties>
