@@ -23,6 +23,7 @@
         <module>smsbao</module>
         <module>learnAlgorithm</module>
         <module>learnMail</module>
+        <module>city</module>
     </modules>
 
     <properties>
