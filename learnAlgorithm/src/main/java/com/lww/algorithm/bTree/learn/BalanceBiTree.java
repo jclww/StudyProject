@@ -4,10 +4,16 @@ package com.lww.algorithm.bTree.learn;
  * Created by Lww on 2017/9/27.
  */
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 
 public class BalanceBiTree<T> {
+
+    public void setRoot(Node root) {
+        this.root = root;
+    }
 
     private Node root;
 
@@ -214,7 +220,31 @@ public class BalanceBiTree<T> {
         }
 
     }
+    public void print() {
+        int backup = 0;
+        Queue<Node> queue = new LinkedList<Node>();
+        Node root = this.root;
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            Node temp = queue.poll();
+//            if (backup == temp.getDepth()) {
+//                System.out.print(temp.data+"   ");
+//            } else {
+//                backup = temp.getDepth();
+//                System.out.println();
+//                System.out.print(temp.data+"   ");
+//            }
+            System.out.print(temp.data+"   ");
 
+            if (temp.lChild != null) {
+                queue.offer(temp.lChild);
+            }
+            if (temp.rChild != null) {
+                queue.offer(temp.rChild);
+            }
+        }
+        System.out.println();
+    }
     private void copyQueue(ConcurrentLinkedQueue<Node> source,
                            ConcurrentLinkedQueue<Node> target){
         while(source.peek()!=null){
