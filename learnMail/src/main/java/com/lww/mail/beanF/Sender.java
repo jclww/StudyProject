@@ -2,16 +2,18 @@ package com.lww.mail.beanF;
 
 public class Sender {
     private String mailHost;
+    private int hostPort;
     private String mail;
     private String passWord;
     private String personal;
 
-    public Sender(String mailHost, String mail, String passWord) {
-        this(mailHost, mail, passWord, null);
+    public Sender(String mailHost, int hostPort, String mail, String passWord) {
+        this(mailHost, hostPort, mail, passWord, null);
     }
 
-    public Sender(String mailHost, String mail, String passWord, String personal) {
+    public Sender(String mailHost, int hostPort, String mail, String passWord, String personal) {
         this.mailHost = mailHost;
+        this.hostPort = hostPort;
         this.mail = mail;
         this.passWord = passWord;
         this.personal = personal;
@@ -24,6 +26,14 @@ public class Sender {
 
     public void setMailHost(String mailHost) {
         this.mailHost = mailHost;
+    }
+
+    public int getHostPort() {
+        return hostPort;
+    }
+
+    public void setHostPort(int hostPort) {
+        this.hostPort = hostPort;
     }
 
     public String getMail() {

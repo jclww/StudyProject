@@ -6,11 +6,17 @@ import java.io.*;
  * Created by Lww on 2017/9/21.
  */
 public class OutTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+
+
         String fileName = "A:/Java/io/test.lww";
         File file = new File(fileName);
         if (file.isDirectory()) {
-
+            System.out.println("文件夹");
+        }
+        if (file.isFile()) {
+            System.out.println("文件");
         }
         if(!file.getParentFile().exists()){
             //创建文件夹
@@ -36,8 +42,8 @@ public class OutTest {
             e.printStackTrace();
         }
         try {
-            out.writeUTF("asdsada李薇薇\r\n");
-            out.writeUTF("asdsadal阿萨德撒");
+            out.write("1231231asdsada李薇薇\r\n".getBytes());
+            out.write("asdsadal阿萨德撒".getBytes());
         } catch (IOException e) {
             e.printStackTrace();
         }

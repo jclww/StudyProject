@@ -12,14 +12,20 @@ public class FileTest {
         FileUtils utils = new FileUtils();
         File file = utils.newFile(filePath);
 
-        System.out.println(file.getName());
-        System.out.println(file.getParent());
-        System.out.println(file.getPath());
-        System.out.println(file.getAbsolutePath());
-        System.out.println(file.lastModified());
-        System.out.println(file.length());
-        System.out.println(file.listRoots());
-        System.out.println(file.listFiles());
+//        System.out.println(file.getName());
+//        System.out.println(file.getParent());
+//        System.out.println(file.getPath());
+//        System.out.println(file.getAbsolutePath());
+
+//        Date date = new Date(file.lastModified());
+//        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        String da = format.format(date);
+//        System.out.println(da);
+//
+//
+//        System.out.println(file.length());
+//        System.out.println(file.listRoots());
+//        System.out.println(file.listFiles());
 
 
 
