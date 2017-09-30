@@ -5,12 +5,13 @@ import com.sun.mail.util.MailSSLSocketFactory;
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
-import javax.mail.*;
+import javax.mail.Message;
+import javax.mail.Session;
+import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-import java.security.GeneralSecurityException;
 import java.util.Date;
 import java.util.Properties;
 
@@ -21,6 +22,7 @@ public class SendOnePic {
     public static String receiveMailAccount = "liweiwei6@btte.net";
 
     public static void main(String[] args) throws Exception {
+        long begin = System.currentTimeMillis();
         Properties prop = new Properties();
 //        prop.setProperty("mail.debug", "true");
         prop.setProperty("mail.host", myEmailSMTPHost);
@@ -34,15 +36,24 @@ public class SendOnePic {
 
         Session session = Session.getInstance(prop);
         Transport ts = session.getTransport();
+//        long temp2 = System.currentTimeMillis();
+//        System.out.println("Create Message"+(temp2 - begin));
         ts.connect("smtp.btte.net","liweiwei6@btte.net", myEmailPassword);//后面的字符是授权码
+
+//        long temp3 = System.currentTimeMillis();
+//        System.out.println("connect Host"+(temp3 - temp2));
+
         Message message = createMimeMessage(session, myEmailAccount, receiveMailAccount);
         ts.sendMessage(message, message.getAllRecipients());
+        long end = System.currentTimeMillis();
+        System.out.println("send "+(end - begin));
+
         ts.close();
     }
     public static MimeMessage createMimeMessage(Session session, String sendMail, String receiveMail) throws Exception {
         MimeMessage message = new MimeMessage(session);
         message.setFrom(new InternetAddress(sendMail, "图片测试", "UTF-8"));
-        message.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress("18720594171@163.com", "XX用户", "UTF-8"));
+        message.addRecipient(MimeMessage.RecipientType.CC, new InternetAddress("18720594171@163.com", "XX用户", "UTF-8"));
         message.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress("1377877153@qq.com", "XX用户", "UTF-8"));
 
 
@@ -57,7 +68,7 @@ public class SendOnePic {
         messageBodyPart = null;
 
         messageBodyPart = new MimeBodyPart();
-        DataSource fds = new FileDataSource("C:\\mailtest\\img\\test.jpg");
+        DataSource fds = new FileDataSource("C:\\freemarker\\img\\img1.jpg");
         messageBodyPart.setDataHandler(new DataHandler(fds));
         messageBodyPart.setContentID("666");
         multipart.addBodyPart(messageBodyPart);
@@ -66,14 +77,14 @@ public class SendOnePic {
 //        gifBodyPart.setContentID("as");   //cid的值
 
 
-        MimeBodyPart text_image = new MimeBodyPart();
-        text_image.setContent(multipart);
-
-
-        MimeMultipart mm = new MimeMultipart();
-        mm.addBodyPart(text_image);
-        mm.setSubType("mixed");
-        message.setContent(mm);
+//        MimeBodyPart text_image = new MimeBodyPart();
+//        text_image.setContent(multipart);
+//
+//
+//        MimeMultipart mm = new MimeMultipart();
+//        mm.addBodyPart(text_image);
+//        mm.setSubType("mixed");
+        message.setContent(multipart);
 
 //        message.setContent("XX用户你好, 今天全场5折, 快来抢购, 错过今天再等一年。。。", "text/html;charset=UTF-8");
         message.setSentDate(new Date());

@@ -4,9 +4,13 @@ public class Attachment {
     private String fileName;
     private String fileLoction;
 
-    public Attachment(String fileName, String fileLoction) {
-        this.fileName = fileName;
+    public Attachment(String fileLoction) {
+        this(fileLoction,null);
+    }
+
+    public Attachment(String fileLoction, String fileName) {
         this.fileLoction = fileLoction;
+        this.fileName = fileName;
     }
 
     /** GET SET **/
