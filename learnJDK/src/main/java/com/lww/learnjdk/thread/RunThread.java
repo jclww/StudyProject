@@ -7,14 +7,14 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class RunThread implements Runnable{
     private ReentrantLock lock = new ReentrantLock();
-    private static int a = 0;
+    private int a = 0;
     @Override
     public void run() {
         long startTime = System.currentTimeMillis();
-        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+        for (int i = 0; i < 1 << 6; i++) {
             lock.lock();
                 a++;
-//                System.out.println(Thread.currentThread().getName()+":"+a);
+                System.out.println(Thread.currentThread().getName()+":"+a);
             lock.unlock();
         }
         long endTime = System.currentTimeMillis();

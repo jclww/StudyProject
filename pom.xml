@@ -25,6 +25,7 @@
         <module>learnMail</module>
         <module>city</module>
         <module>learnDBPool</module>
+        <module>bookRead</module>
     </modules>
 
     <properties>
