@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/city/city.iml" filepath="$PROJECT_DIR$/city/city.iml" />
       <module fileurl="file://$PROJECT_DIR$/domy-netty/domy-netty.iml" filepath="$PROJECT_DIR$/domy-netty/domy-netty.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnAlgorithm/learnAlgorithm.iml" filepath="$PROJECT_DIR$/learnAlgorithm/learnAlgorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learnDBPool/learnDBPool.iml" filepath="$PROJECT_DIR$/learnDBPool/learnDBPool.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnDisruptor/learnDisruptor.iml" filepath="$PROJECT_DIR$/learnDisruptor/learnDisruptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnJDK/learnJDK.iml" filepath="$PROJECT_DIR$/learnJDK/learnJDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/learnLog/learnLog.iml" filepath="$PROJECT_DIR$/learnLog/learnLog.iml" />

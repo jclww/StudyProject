@@ -11,6 +11,7 @@
         <module name="domy-netty" />
         <module name="domynetty" />
         <module name="learnAlgorithm" />
+        <module name="learnDBPool" />
         <module name="learnDisruptor" />
         <module name="learnJDK" />
         <module name="learnLog" />
@@ -30,6 +31,7 @@
       <module name="city" target="1.8" />
       <module name="domy-netty" target="1.8" />
       <module name="learnAlgorithm" target="1.8" />
+      <module name="learnDBPool" target="1.8" />
       <module name="learnDisruptor" target="1.8" />
       <module name="learnJDK" target="1.8" />
       <module name="learnLog" target="1.8" />
