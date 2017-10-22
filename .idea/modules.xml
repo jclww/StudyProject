@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/nettyspring/nettyspring.iml" filepath="$PROJECT_DIR$/nettyspring/nettyspring.iml" />
       <module fileurl="file://$PROJECT_DIR$/simpleSSM/simpleSSM.iml" filepath="$PROJECT_DIR$/simpleSSM/simpleSSM.iml" />
       <module fileurl="file://$PROJECT_DIR$/smsbao/smsbao.iml" filepath="$PROJECT_DIR$/smsbao/smsbao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBase/springBase.iml" filepath="$PROJECT_DIR$/springBase/springBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/springLearn/springLearn.iml" filepath="$PROJECT_DIR$/springLearn/springLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/swaggerui/swaggerui.iml" filepath="$PROJECT_DIR$/swaggerui/swaggerui.iml" />
     </modules>

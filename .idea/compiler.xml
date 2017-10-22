@@ -21,6 +21,7 @@
         <module name="nettyspring" />
         <module name="simpleSSM" />
         <module name="smsbao" />
+        <module name="springBase" />
         <module name="springLearn" />
         <module name="swaggerui" />
       </profile>
@@ -40,6 +41,7 @@
       <module name="nettyspring" target="1.8" />
       <module name="simpleSSM" target="1.8" />
       <module name="smsbao" target="1.8" />
+      <module name="springBase" target="1.8" />
       <module name="springLearn" target="1.8" />
       <module name="StudyProject" target="1.8" />
       <module name="swaggerui" target="1.8" />

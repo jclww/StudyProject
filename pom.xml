@@ -25,6 +25,7 @@
         <module>learnMail</module>
         <module>city</module>
         <module>bookRead</module>
+        <module>springBase</module>
     </modules>
 
     <properties>
