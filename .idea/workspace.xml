@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="GROUP_BY_SEVERITY" value="true" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="88382500-981c-42ca-a8ca-9bafaf355538" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/learn/SendOnePic.java" afterPath="$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/learn/SendOnePic.java" />
@@ -34,24 +31,13 @@
     <ignored path="$PROJECT_DIR$/learnMail/target/" />
     <ignored path="$PROJECT_DIR$/city/target/" />
     <ignored path="$PROJECT_DIR$/springBase/target/" />
+    <ignored path="$PROJECT_DIR$/learnDBPool/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="StudyProject" />
@@ -101,8 +87,8 @@
       <file leaf-file-name="spring-mybatis.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleSSM/src/main/resources/spring-mybatis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="244">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -128,11 +114,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-context.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="spring-context.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springBase/src/main/resources/spring/spring-context.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-609">
+              <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+              <folding>
+                <marker date="1508634127540" expanded="true" signature="91114:91156" ph="..." />
+                <marker date="1508634127540" expanded="true" signature="91114:91174" ph="..." />
+                <marker date="1508634127540" expanded="true" signature="91114:91187" ph="..." />
+                <marker date="1508634127540" expanded="true" signature="91114:91202" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,50 +165,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>getUnknownFields</find>
-      <find>getUnknownFields() {</find>
-      <find>parseUnknownField</find>
-      <find>parseUnknownFieldProto</find>
-      <find>channelRead0</find>
-      <find>encode</find>
-      <find>EventExecutor</find>
-      <find>newExecutor</find>
-      <find>process</find>
-      <find>obtainFreshBeanFactory()</find>
-      <find>slf4j.version</find>
-      <find>v2/api-do</find>
-      <find>SpringfoxWebMvcConfiguration</find>
-      <find>to null, i.e. I</find>
-      <find>athrow</find>
-      <find>submit</find>
-      <find>Node</find>
-      <find>putTreeVal</find>
-      <find>575   703   831   959   31   95   159   223   287   351   415   479   543   607   671</find>
-      <find>22   24   26   28   30   32   34   36   38   40   42   44   46   48   50   52   54   56   58   60   62   64   66   6</find>
-      <find>hashc</find>
-      <find>synchronized.</find>
-      <find>.</find>
-      <find>_</find>
-      <find>urlLookup</find>
-      <find>99</find>
-      <find>d1</find>
-      <find>format(</find>
-      <find>mybatis.version</find>
-      <find>${fastjson.version}</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>com.lww.netty.simple.</replace>
-      <replace>com.lww.netty</replace>
-      <replace>com.netty.redis</replace>
-      <replace>_</replace>
-      <replace>.</replace>
-    </replaceStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -206,8 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/ObjectSerial/TestObject.java" />
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/ObjectSerial/ObjectOut.java" />
         <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/Enum/TestEnum.java" />
         <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/Enum/EnumTest.java" />
         <option value="$PROJECT_DIR$/simpleSSM/src/main/resources/springmvc.xml" />
@@ -257,6 +222,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/springBase/pom.xml" />
         <option value="$PROJECT_DIR$/springBase/src/main/resources/spring/spring-context.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -294,44 +261,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-50" />
     <option name="width" value="965" />
     <option name="height" value="744" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Ali-Check</id>
-          </State>
-          <State>
-            <id>Gradle</id>
-          </State>
-          <State>
-            <id>Kotlin</id>
-          </State>
-          <State>
-            <id>Maven</id>
-          </State>
-          <State>
-            <id>OSGi</id>
-          </State>
-          <State>
-            <id>Probable bugsGradle</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>AlibabaTestClassShouldEndWithTestNaming</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -361,88 +294,7 @@
             <path>
               <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="simpleSSM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="simpleSSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="simpleSSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="simpleSSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="simpleSSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="simpleSSM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="springBase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="springBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="springBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="springBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="springBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="springBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1102,9 +954,6 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="88382500-981c-42ca-a8ca-9bafaf355538" name="Default" comment="" />
@@ -1187,15 +1036,15 @@
       <workItem from="1508033611490" duration="1319000" />
       <workItem from="1508545941986" duration="6567000" />
       <workItem from="1508585754462" duration="4894000" />
-      <workItem from="1508631013085" duration="2273000" />
+      <workItem from="1508631013085" duration="2860000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="422842000" />
+    <option name="totallyTimeSpent" value="423429000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1353,25 +1202,7 @@
     </breakpoint-manager>
     <watches-manager />
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.9.RELEASE/spring-beans-4.3.9.RELEASE-sources.jar!/org/springframework/beans/factory/InitializingBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="37" column="55" lean-forward="true" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar!/springfox/documentation/spring/web/PropertySourcedRequestMappingHandlerMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-658">
-          <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1651,6 +1482,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="159" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1658,6 +1490,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1709,114 +1542,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleSSM/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springBase/src/main/resources/spring/spring-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>learnShiro:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>bookRead</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: cglib:cglib:3.1</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
-  </component>
-  <component name="mavenExecuteGoalHistory">
-    <option value="" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-609">
+          <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+          <folding>
+            <marker date="1508634127540" expanded="true" signature="91114:91156" ph="..." />
+            <marker date="1508634127540" expanded="true" signature="91114:91174" ph="..." />
+            <marker date="1508634127540" expanded="true" signature="91114:91187" ph="..." />
+            <marker date="1508634127540" expanded="true" signature="91114:91202" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleSSM/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

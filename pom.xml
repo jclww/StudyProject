@@ -24,6 +24,7 @@
         <module>learnAlgorithm</module>
         <module>learnMail</module>
         <module>city</module>
+        <module>learnDBPool</module>
         <module>bookRead</module>
         <module>springBase</module>
     </modules>

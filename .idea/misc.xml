@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/bookRead" />
+    <file type="web" url="file://$PROJECT_DIR$/learnDBPool" />
     <file type="web" url="file://$PROJECT_DIR$/learnShiro" />
     <file type="web" url="file://$PROJECT_DIR$/simpleSSM" />
     <file type="web" url="file://$PROJECT_DIR$/springBase" />
