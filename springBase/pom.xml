@@ -13,7 +13,7 @@
     <!-- 版本控制 -->
     <properties>
         <junit.version>4.12</junit.version>
-        <spring.version>4.3.12.RELEASE</spring.version>
+        <spring.version>4.3.9.RELEASE</spring.version>
         <mysql2java.version>6.0.6</mysql2java.version>
         <!-- mybatis版本号 -->
         <mybatis.version>3.4.5</mybatis.version>
@@ -27,6 +27,8 @@
         <druid.version>1.1.4</druid.version>
         <!-- 插件版本 -->
         <jetty.version>9.4.7.v20170914</jetty.version>
+        <compiler.version>3.5.1</compiler.version>
+        <war.version>2.6</war.version>
     </properties>
     <dependencies>
         <!-- druid******Begin -->
@@ -92,6 +94,11 @@
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
@@ -107,14 +114,84 @@
         <!-- Junit******End -->
 
     </dependencies>
+
+    <profiles>
+        <profile>
+            <!-- 本地开发环境 -->
+            <id>dev</id>
+            <properties>
+                <profiles.active>dev</profiles.active>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <!-- 测试环境 -->
+            <id>test</id>
+            <properties>
+                <profiles.active>test</profiles.active>
+            </properties>
+        </profile>
+        <profile>
+            <!-- 生产环境 -->
+            <id>product</id>
+            <properties>
+                <profiles.active>product</profiles.active>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
         <finalName>springBase</finalName>
+        <resources>
+            <!-- 排除src/main/resources下 关于属性的设置 -->
+            <resource>
+                <directory>src/main/resources</directory>
+                <excludes>
+                    <exclude>dev/*</exclude>
+                    <exclude>product/*</exclude>
+                    <exclude>test/*</exclude>
+                </excludes>
+                <filtering>true</filtering>
+            </resource>
+            <!-- 根据环境加载src/main/resources下 关于属性的设置 -->
+            <resource>
+                <directory>src/main/resources/${profiles.active}</directory>
+            </resource>
+        </resources>
+
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compiler.version}</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                    <failOnError>true</failOnError>
+                    <showDeprecation>true</showDeprecation>
+                    <showWarnings>true</showWarnings>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${war.version}</version>
+                <configuration>
+                    <warName>${project.artifactId}</warName>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>${jetty.version}</version>
             </plugin>
         </plugins>
+
+
     </build>
 </project>
