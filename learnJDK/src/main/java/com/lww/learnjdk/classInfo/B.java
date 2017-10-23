@@ -13,4 +13,13 @@ public class B extends A {
     public void setC(String c) {
         this.c = c;
     }
+
+    @Override
+    public String toString() {
+        return "B{" +
+                "c='" + c + '\'' +
+                ", a='" + a + '\'' +
+                ", b='" + b + '\'' +
+                '}';
+    }
 }

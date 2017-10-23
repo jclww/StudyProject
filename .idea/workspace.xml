@@ -2,45 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88382500-981c-42ca-a8ca-9bafaf355538" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnMail/src/main/freemarker/file/test1.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnMail/src/main/freemarker/file/test2.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnMail/src/main/freemarker/img/img1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnMail/src/main/freemarker/img/img2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/learnDBPool_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/learnDBPool_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bookRead/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bookRead/src/main/java/cn/jxufe/lww/bookread/action/SelectAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bookRead/src/main/java/cn/jxufe/lww/bookread/action/SelectChapterAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bookRead/src/main/java/cn/jxufe/lww/bookread/jsoup/SelectBook.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bookRead/src/main/java/cn/jxufe/lww/bookread/jsoup/SelectChapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bookRead/src/main/java/cn/jxufe/lww/bookread/jsoup/SelectContent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bookRead/src/main/java/cn/jxufe/lww/bookread/jsoup/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bookRead/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bookRead/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnDBPool/learnDBPool.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnDBPool/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnDBPool/src/main/resources/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnDBPool/src/main/resources/spring-db.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnDBPool/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnDBPool/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/Annotations/FieldAnotation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/Annotations/MethodAnnotation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/Annotations/TypeAnnotation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/Annotations/test/AnnotationParse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/Annotations/test/AnnotationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnMail/src/main/freemarker/user.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleSSM/src/main/java/com/lww/ssm/Test.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/thread/pool/MyThreadPool.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/thread/RunThread.java" afterPath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/thread/RunThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learnMail/learnMail.iml" afterPath="$PROJECT_DIR$/learnMail/learnMail.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learnMail/src/main/ftl/user.ftl" afterPath="$PROJECT_DIR$/learnMail/src/main/ftl/user.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springLearn/pom.xml" afterPath="$PROJECT_DIR$/springLearn/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/thread/mian/pool/MyPoolTest.java" afterPath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/thread/mian/pool/PoolTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/A.java" afterPath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/A.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/B.java" afterPath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/B.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/Test.java" afterPath="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,41 +52,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FileTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/FileTest.java">
+      <file leaf-file-name="IOServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/bio/IOServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="200">
+              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObjectOut.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/ObjectSerial/ObjectOut.java">
+      <file leaf-file-name="NioClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/NioClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1220">
-              <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+            <state relative-caret-position="0">
+              <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestObject.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/ObjectSerial/TestObject.java">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/FileUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+            <state relative-caret-position="-1400">
+              <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -137,18 +92,13 @@
         <option value="Tag Library Descriptor" />
         <option value="Kotlin Class" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>domyServer</find>
-      <find>parseUnknownFieldProto3</find>
-      <find>getUnknownFields()</find>
-      <find>helloworld</find>
-      <find>GeneratedMessage</find>
       <find>builder</find>
       <find>getUnknownFields</find>
       <find>getUnknownFields() {</find>
@@ -174,6 +124,11 @@
       <find>synchronized.</find>
       <find>.</find>
       <find>_</find>
+      <find>allocate</find>
+      <find>allocateDirect</find>
+      <find>selector.selectedKeys</find>
+      <find>oldImpl</find>
+      <find>oldImpl</find>
     </findStrings>
     <replaceStrings>
       <replace>com.lww.netty.simple.</replace>
@@ -194,20 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/thread/mian/pool/MyPoolTest.java" />
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/thread/CallThread.java" />
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/thread/mian/CallThreadTest.java" />
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/InputTest.java" />
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnMail/Main.java" />
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnMail/global.java" />
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnMail/global/Protocol.java" />
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnMail/base/MailApi.java" />
-        <option value="$PROJECT_DIR$/springLearn/src/main/java/com/lww/spring/learn/bean/BaseMailBean.java" />
-        <option value="$PROJECT_DIR$/springLearn/src/main/resources/spring.xml" />
-        <option value="$PROJECT_DIR$/springLearn/src/main/java/com/lww/spring/learn/BeanFactoryL.java" />
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/FileUtils.java" />
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/thread/RunThread.java" />
-        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/thread/TestCPU.java" />
         <option value="$PROJECT_DIR$/learnAlgorithm/src/main/java/com/lww/algorithm/bTree/BTree.java" />
         <option value="$PROJECT_DIR$/learnAlgorithm/src/main/java/com/lww/algorithm/bTree/learn/A.java" />
         <option value="$PROJECT_DIR$/city/pom.xml" />
@@ -245,6 +186,20 @@
         <option value="$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/JavaMail.java" />
         <option value="$PROJECT_DIR$/learnDBPool/pom.xml" />
         <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/ObjectSerial/ObjectOut.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/A.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/B.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/Test.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/bio/BIOTest.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/aio/AIOTest.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/NioTest.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/CopyFile.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/MappedByteBuffer.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/MappedByteBufferTest.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/NIOServer.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/FileUtils.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/bio/IOServer.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/bio/IOServerPoolTest.java" />
+        <option value="$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/NioClient.java" />
       </list>
     </option>
   </component>
@@ -335,11 +290,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,7 +318,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../domy/adnew/trunk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../domy/newicp/pom.xml" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://E:/JDK/1.8_131/src.zip!/java/util/HashMap.java&#10;smsbao&#9;FILE&#9;file://E:/Project/StudyProject/StudyProject/smsbao/pom.xml&#10;LoggerAction&#9;PSI&#9;JAVA://ch.qos.logback.classic.joran.action.LoggerAction&#10;parseUnknownFieldProto3&#9;ACTION&#9;null" />
   </component>
   <component name="RecentsManager">
@@ -390,15 +359,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ObjectOut">
-    <configuration default="false" name="TestStringMail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.NioClient">
+    <configuration default="false" name="CopyFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.lww.mail.beanF.test.*" />
+          <option name="PATTERN" value="com.lww.learnjdk.io.nio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.lww.mail.beanF.test.TestStringMail" />
+      <option name="MAIN_CLASS_NAME" value="com.lww.learnjdk.io.nio.CopyFile" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -407,18 +376,18 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="learnMail" />
+      <module name="learnJDK" />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="TestFreeMarkerMail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="IOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.lww.mail.beanF.test.*" />
+          <option name="PATTERN" value="com.lww.learnjdk.io.bio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.lww.mail.beanF.test.TestFreeMarkerMail" />
+      <option name="MAIN_CLASS_NAME" value="com.lww.learnjdk.io.bio.IOServer" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -427,18 +396,18 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="learnMail" />
+      <module name="learnJDK" />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="SendOnePic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="NioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.lww.mail.learn.*" />
+          <option name="PATTERN" value="com.lww.learnjdk.io.nio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.lww.mail.learn.SendOnePic" />
+      <option name="MAIN_CLASS_NAME" value="com.lww.learnjdk.io.nio.NioClient" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -447,18 +416,18 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="learnMail" />
+      <module name="learnJDK" />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="TestAttachmentMail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="NIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.lww.mail.beanF.test.*" />
+          <option name="PATTERN" value="com.lww.learnjdk.io.nio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.lww.mail.beanF.test.TestAttachmentMail" />
+      <option name="MAIN_CLASS_NAME" value="com.lww.learnjdk.io.nio.NIOServer" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -467,18 +436,18 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="learnMail" />
+      <module name="learnJDK" />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="ObjectOut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="IOServerPoolTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.lww.learnjdk.io.ObjectSerial.*" />
+          <option name="PATTERN" value="com.lww.learnjdk.io.bio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.lww.learnjdk.io.ObjectSerial.ObjectOut" />
+      <option name="MAIN_CLASS_NAME" value="com.lww.learnjdk.io.bio.IOServerPoolTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -988,19 +957,19 @@
       <item index="0" class="java.lang.String" itemvalue="Maven.domy-netty [install:help]" />
       <item index="1" class="java.lang.String" itemvalue="Maven.swagger-ui [install:install]" />
       <item index="2" class="java.lang.String" itemvalue="Maven.swagger-ui" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TestStringMail" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestFreeMarkerMail" />
-      <item index="5" class="java.lang.String" itemvalue="Application.SendOnePic" />
-      <item index="6" class="java.lang.String" itemvalue="Application.TestAttachmentMail" />
-      <item index="7" class="java.lang.String" itemvalue="Application.ObjectOut" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CopyFile" />
+      <item index="4" class="java.lang.String" itemvalue="Application.IOServer" />
+      <item index="5" class="java.lang.String" itemvalue="Application.NioClient" />
+      <item index="6" class="java.lang.String" itemvalue="Application.NIOServer" />
+      <item index="7" class="java.lang.String" itemvalue="Application.IOServerPoolTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ObjectOut" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestAttachmentMail" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SendOnePic" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TestFreeMarkerMail" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TestStringMail" />
+        <item index="0" class="java.lang.String" itemvalue="Application.NioClient" />
+        <item index="1" class="java.lang.String" itemvalue="Application.IOServerPoolTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.IOServer" />
+        <item index="3" class="java.lang.String" itemvalue="Application.NIOServer" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CopyFile" />
       </list>
     </recent_temporary>
   </component>
@@ -1084,25 +1053,35 @@
       <workItem from="1507528578131" duration="363000" />
       <workItem from="1507529905880" duration="9000" />
       <workItem from="1507544942181" duration="82000" />
-      <workItem from="1507607249438" duration="32000" />
+      <workItem from="1507607249438" duration="829000" />
+      <workItem from="1507879310625" duration="52000" />
+      <workItem from="1507879583205" duration="930000" />
+      <workItem from="1508140835175" duration="696000" />
+      <workItem from="1508206233866" duration="51000" />
+      <workItem from="1508225356339" duration="9226000" />
+      <workItem from="1508286963287" duration="7362000" />
+      <workItem from="1508305518004" duration="51000" />
+      <workItem from="1508306524091" duration="1378000" />
+      <workItem from="1508719585013" duration="88000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="388503000" />
+    <option name="totallyTimeSpent" value="409134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23278688" sideWeight="0.51134646" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.037821483" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16390729" sideWeight="0.51134646" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03717754" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20347957" sideWeight="0.47630924" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21699545" sideWeight="0.47630924" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6213115" sideWeight="0.48940998" order="3" side_tool="false" content_ui="tabs" />
@@ -1112,10 +1091,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38360655" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17540984" sideWeight="0.48865354" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11589404" sideWeight="0.48865354" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4180328" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2730711" sideWeight="0.4565757" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23520486" sideWeight="0.4565757" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16111952" sideWeight="0.53731346" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16187595" sideWeight="0.5434243" order="7" side_tool="true" content_ui="tabs" />
@@ -1289,280 +1268,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/enity/SendPlainMailBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/enity/MailBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/Receiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/MailProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/Protol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/MailBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/test/HtmlTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/MailFreeMarkHtmlBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/Sender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="9" column="77" lean-forward="false" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/freemark/FreeMarkerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/javax.mail-api/1.5.5/javax.mail-api-1.5.5.jar!/javax/mail/Multipart.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/javax.mail-api/1.5.5/javax.mail-api-1.5.5.jar!/javax/mail/internet/MimeMultipart.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="153" column="20" lean-forward="true" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnAlgorithm/src/main/java/com/lww/algorithm/bTree/lww/BalancedBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnAlgorithm/src/main/java/com/lww/algorithm/bTree/lww/TestBalance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/send/SendPlainMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="27" column="18" lean-forward="false" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/javax.mail-api/1.5.5/javax.mail-api-1.5.5.jar!/javax/mail/Message.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="142" column="25" lean-forward="false" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/javax.mail-api/1.5.5/javax.mail-api-1.5.5.jar!/javax/mail/internet/MimeMessage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="861" column="32" lean-forward="false" selection-start-line="861" selection-start-column="32" selection-end-line="861" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/MailStringBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4.7/mail-1.4.7.jar!/com/sun/mail/smtp/SMTPTransport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="528" column="0" lean-forward="true" selection-start-line="528" selection-start-column="0" selection-end-line="528" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/javax.mail-api/1.5.5/javax.mail-api-1.5.5.jar!/javax/mail/Transport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="73" column="45" lean-forward="false" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/learn/SendOnePic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="48" column="43" lean-forward="true" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/test/TestStringMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/test/TestFreeMarkerMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-310">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="77" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/Attachment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/JavaMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/java/com/lww/mail/beanF/test/TestAttachmentMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnMail/src/main/ftl/user.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar!/org/apache/commons/pool/PoolUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar!/org/apache/commons/pool/KeyedObjectPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar!/org/apache/commons/pool/ObjectPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar!/org/apache/commons/pool/impl/GenericKeyedObjectPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar!/org/apache/commons/pool/impl/GenericKeyedObjectPoolFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar!/org/apache/commons/dbcp/BasicDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar!/org/apache/commons/pool/impl/GenericObjectPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720">
-          <caret line="149" column="40" lean-forward="false" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar!/org/apache/commons/pool/KeyedPoolableObjectFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar!/org/apache/commons/dbcp/ConnectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learnDBPool/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1619,19 +1324,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/FileTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1639,7 +1335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1220">
           <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1647,6 +1342,288 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domy-netty/src/main/java/com/hiveview/netty/handle/DomyServerHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domy-netty/src/main/java/com/hiveview/netty/handle/BaseDisruptorAdapterHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="29" column="55" lean-forward="false" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.13.Final/netty-all-4.1.13.Final-sources.jar!/io/netty/channel/AbstractChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="39" column="80" lean-forward="false" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.13.Final/netty-all-4.1.13.Final-sources.jar!/io/netty/channel/ChannelId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="54" column="11" lean-forward="false" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/classInfo/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.13.Final/netty-all-4.1.13.Final-sources.jar!/io/netty/channel/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="259" column="43" lean-forward="true" selection-start-line="259" selection-start-column="43" selection-end-line="259" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/aio/AIOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/nio/HeapByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="54" column="4" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/nio/DirectByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="116" column="20" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/nio/channels/FileChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="347" column="24" lean-forward="false" selection-start-line="347" selection-start-column="24" selection-end-line="347" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/nio/ByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="329" column="34" lean-forward="false" selection-start-line="329" selection-start-column="34" selection-end-line="329" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/CopyFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="53" column="65" lean-forward="true" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/nio/Buffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="395" column="17" lean-forward="true" selection-start-line="394" selection-start-column="7" selection-end-line="395" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/nio/channels/SelectionKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="227" column="28" lean-forward="false" selection-start-line="227" selection-start-column="28" selection-end-line="227" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/util/concurrent/TimeUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="385" column="33" lean-forward="true" selection-start-line="385" selection-start-column="33" selection-end-line="385" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/MappedByteBufferTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/nio/channels/spi/AbstractSelectableChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="49" column="47" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/bio/BIOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/nio/channels/ServerSocketChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/jre/lib/rt.jar!/sun/nio/ch/ServerSocketAdaptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/jre/lib/rt.jar!/sun/nio/ch/ServerSocketChannelImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/net/InetSocketAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/net/SocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="38" column="59" lean-forward="true" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/net/ServerSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-440">
+          <caret line="535" column="22" lean-forward="false" selection-start-line="535" selection-start-column="18" selection-end-line="535" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/1.8_131/src.zip!/java/net/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="70" column="7" lean-forward="true" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/bio/IOServerPoolTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="70" column="9" lean-forward="false" selection-start-line="66" selection-start-column="58" selection-end-line="70" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/NioTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/NIOServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="77" column="54" lean-forward="false" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.13.Final/netty-all-4.1.13.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="87" column="36" lean-forward="false" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.13.Final/netty-all-4.1.13.Final-sources.jar!/io/netty/channel/ChannelFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="185" column="18" lean-forward="false" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnNetty/src/main/java/com/lww/netty/simple/WorldClockServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.13.Final/netty-all-4.1.13.Final-sources.jar!/io/netty/handler/logging/LoggingHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.13.Final/netty-all-4.1.13.Final-sources.jar!/io/netty/channel/socket/nio/NioServerSocketChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="144" column="44" lean-forward="false" selection-start-line="144" selection-start-column="28" selection-end-line="144" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/bio/IOServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnJDK/src/main/java/com/lww/learnjdk/io/nio/NioClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1400">
+          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
           <folding />
         </state>
       </provider>

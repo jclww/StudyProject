@@ -23,4 +23,11 @@ public class A {
     String a;
     String b;
 
+    @Override
+    public String toString() {
+        return "A{" +
+                "a='" + a + '\'' +
+                ", b='" + b + '\'' +
+                '}';
+    }
 }

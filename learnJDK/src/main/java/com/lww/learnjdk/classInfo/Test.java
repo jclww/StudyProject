@@ -12,6 +12,6 @@ public class Test {
         aa.setA("a");
         aa.setB("bhh");
 
-        System.out.println(bb.getA()+"  "+aa.getA());
+        System.out.println(aa.toString());
     }
 }
