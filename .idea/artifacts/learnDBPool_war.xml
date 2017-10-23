@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="learnDBPool:war">
-    <output-path>$PROJECT_DIR$/learnDBPool/target</output-path>
-    <root id="archive" name="learnDBPool.war">
-      <element id="artifact" artifact-name="learnDBPool:war exploded" />
-    </root>
-  </artifact>
-</component>

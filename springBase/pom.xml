@@ -1,0 +1,120 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>learn</artifactId>
+        <groupId>com.lww</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>springBase</artifactId>
+    <packaging>war</packaging>
+    <name>springBase Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <!-- 版本控制 -->
+    <properties>
+        <junit.version>4.12</junit.version>
+        <spring.version>4.3.12.RELEASE</spring.version>
+        <mysql2java.version>6.0.6</mysql2java.version>
+        <!-- mybatis版本号 -->
+        <mybatis.version>3.4.5</mybatis.version>
+        <!-- mybatis-spring版本号 -->
+        <mybatis-spring.version>1.3.1</mybatis-spring.version>
+        <!-- fastJson版本号 -->
+        <fastjson.version>1.2.39</fastjson.version>
+        <!-- logback日志 -->
+        <logback.version>1.2.3</logback.version>
+        <slf4j.version>1.7.25</slf4j.version>
+        <druid.version>1.1.4</druid.version>
+        <!-- 插件版本 -->
+        <jetty.version>9.4.7.v20170914</jetty.version>
+    </properties>
+    <dependencies>
+        <!-- druid******Begin -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <!-- druid******End -->
+
+        <!-- logback******Begin -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <!-- logback******Begin -->
+
+        <!-- fastjson******Begin -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <!-- fastjson******End -->
+
+        <!-- mybatis******Begin -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis-spring.version}</version>
+        </dependency>
+        <!-- mybatis******End -->
+
+        <!-- mysql驱动******Begin -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql2java.version}</version>
+        </dependency>
+        <!-- mysql驱动******End -->
+
+        <!-- Spring******Begin -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!-- Spring******End -->
+
+        <!-- Junit******Begin -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Junit******End -->
+
+    </dependencies>
+    <build>
+        <finalName>springBase</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${jetty.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>

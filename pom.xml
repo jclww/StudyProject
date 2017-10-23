@@ -26,6 +26,7 @@
         <module>city</module>
         <module>learnDBPool</module>
         <module>bookRead</module>
+        <module>springBase</module>
     </modules>
 
     <properties>
