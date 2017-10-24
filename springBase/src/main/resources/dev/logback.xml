@@ -42,7 +42,7 @@
     <!--</filter>-->
     <!--</appender>-->
 
-    <logger name="org.springframework" level="DEBUG"/>
+    <logger name="org.springframework" level="INFO"/>
 
     <!-- 日志输出级别 -->
     <root level="DEBUG">
