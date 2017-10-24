@@ -25,12 +25,22 @@
         <logback.version>1.2.3</logback.version>
         <slf4j.version>1.7.25</slf4j.version>
         <druid.version>1.1.4</druid.version>
+        <servlet.version>2.5</servlet.version>
         <!-- 插件版本 -->
         <jetty.version>9.4.7.v20170914</jetty.version>
         <compiler.version>3.5.1</compiler.version>
         <war.version>2.6</war.version>
     </properties>
     <dependencies>
+        <!-- servlet******Begin -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>${servlet.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- servlet******Begin -->
+
         <!-- druid******Begin -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -152,12 +162,18 @@
                     <exclude>dev/*</exclude>
                     <exclude>product/*</exclude>
                     <exclude>test/*</exclude>
+                    <!-- 主要用于过滤spring下的文件 -->
+                    <exclude>*/README.md</exclude>
                 </excludes>
                 <filtering>true</filtering>
             </resource>
             <!-- 根据环境加载src/main/resources下 关于属性的设置 -->
             <resource>
                 <directory>src/main/resources/${profiles.active}</directory>
+                <!-- 用于过滤具体环境的README.md -->
+                <excludes>
+                    <exclude>README.md</exclude>
+                </excludes>
             </resource>
         </resources>
 

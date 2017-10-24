@@ -1,87 +1,53 @@
-<?xml version="1.0"?>
-<configuration>
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" debug="false">
+
+    <!-- Debug  Info  Warn  Error  Fatal -->
+
     <!--加载外部属性文件-->
     <property resource="application.properties" />
-    <!-- 定义变量后，可以使“${}”来使用变量 -->
-    <property name="APP_Name" value="LWWLogProject" />
 
-    <!-- 使用<contextName>设置名字，用于区分不同应用程序的记录。 -->
-    <contextName>${APP_Name}</contextName>
-
-    <!-- ch.qos.logback.core.ConsoleAppender 控制台输出 -->
-    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>[1] [%-5level] %d{HH:mm:ss.SSS} [%thread] %logger{36} - %msg%n</pattern>
+    <!-- 控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
         </encoder>
     </appender>
-    <appender name="console2" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>[2] [%-5level] %d{HH:mm:ss.SSS} [%thread] %logger{36} - %msg%n</pattern>
-        </encoder>
-    </appender>
-
-    <appender name="console3" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>[3] [%-5level] %d{HH:mm:ss.SSS} [%thread] %logger{36} - %msg%n</pattern>
-        </encoder>
-    </appender>
-    <appender name="console4" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>[4] [%-5level] %d{HH:mm:ss.SSS} [%thread] %logger{36} - %msg%n</pattern>
-        </encoder>
-    </appender>
-
-
     <!--写入日志文件-->
     <appender name="fileAppender"  class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.path}/${application.name}.log</file>
-        <append>true</append>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>
                 ${log.path}/${application.name}-%d{yyyy-MM-dd}_%i.log
             </fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>1MB</maxFileSize>
+                <maxFileSize>100MB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
         </encoder>
     </appender>
 
+    <!--输出到logstash-->
+    <!--<appender name="stashAppender" class="net.logstash.logback.appender.LogstashTcpSocketAppender">-->
+    <!--<destination>${logstash.host}</destination>-->
 
+    <!--&lt;!&ndash; encoder is required &ndash;&gt;-->
+    <!--<encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder" />-->
+    <!--&lt;!&ndash;只输出info级别以下的日志&ndash;&gt;-->
+    <!--<filter class="ch.qos.logback.classic.filter.ThresholdFilter">-->
+    <!--<level>INFO</level>-->
+    <!--</filter>-->
+    <!--</appender>-->
 
-    <!--com.lww.testlog：类的全路径 -->
-    <!--没有设置addtivity，默认为true，将此loger的打印信息向上级传递；
-                           false   不再向上传递自己处理打印日志   -->
-    <!--没有设置appender，此loger本身不打印任何信息。-->
+    <logger name="org.springframework" level="DEBUG"/>
 
-    <!--<logger name="ch.qos" level="INFO" additivity="false">-->
-    <!--&lt;!&ndash;<appender-ref ref="console3"/>&ndash;&gt;-->
-    <!--</logger>-->
-
-
-    <logger name="com.lww.testlog" level="INFO" additivity="true">
-        <!--<appender-ref ref="console3"/>-->
-    </logger>
-
-    <!--<logger name="com.lww" level="DEBUG" additivity="false">-->
-    <!--<appender-ref ref="console"/>-->
-    <!--<appender-ref ref="console2"/>-->
-    <!--</logger>-->
-
-
-
-
-
-
-
-    <!-- 顶级 日志级别 -->
-    <root>
-        <level value="DEBUG" />
-        <appender-ref ref="console4" />
+    <!-- 日志输出级别 -->
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT" />
         <appender-ref ref="fileAppender"/>
+        <!--<appender-ref ref="stashAppender"/>-->
     </root>
-
 </configuration>
