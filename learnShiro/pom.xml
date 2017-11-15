@@ -11,103 +11,188 @@
     <name>learnShiro Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
-        <!-- shiro 版本号 -->
-        <shiro.version>1.4.0</shiro.version>
-        <!-- spring版本号 -->
+        <junit.version>4.12</junit.version>
         <spring.version>4.3.9.RELEASE</spring.version>
+        <mysql2java.version>6.0.6</mysql2java.version>
         <!-- mybatis版本号 -->
-        <mybatis.version>3.4.1</mybatis.version>
+        <mybatis.version>3.4.5</mybatis.version>
         <!-- mybatis-spring版本号 -->
-        <mybatis-spring.version>1.3.0</mybatis-spring.version>
-        <!-- mysql2java版本号-->
-        <mysql2java.version>5.1.40</mysql2java.version>
-        <!--fastJson版本号-->
-        <fastjson.version>1.2.31</fastjson.version>
-        <!-- logBack-->
+        <mybatis-spring.version>1.3.1</mybatis-spring.version>
+        <!-- fastJson版本号 -->
+        <fastjson.version>1.2.39</fastjson.version>
+        <!-- logback日志 -->
         <logback.version>1.2.3</logback.version>
+        <!-- logback在spring指定logback.xml文件位置 暂时不用 -->
+        <!--<logback-spring.version>0.1.4</logback-spring.version>-->
+        <slf4j.version>1.7.25</slf4j.version>
+        <druid.version>1.1.4</druid.version>
+        <servlet.version>2.5</servlet.version>
+        <!-- 插件版本 -->
+        <jetty.version>9.4.7.v20170914</jetty.version>
+        <compiler.version>3.5.1</compiler.version>
+        <war.version>2.6</war.version>
 
+        <jedis.version>2.9.0</jedis.version>
+        <spring-data.version>2.0.0.RELEASE</spring-data.version>
+        <shiro.version>1.4.0</shiro.version>
+        <lombok.version>1.16.18</lombok.version>
     </properties>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-core -->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-core</artifactId>
-            <version>${shiro.version}</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
         </dependency>
-        <!-- spring核心包 start -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <!-- spring核心包 end -->
 
-        <!-- mybatis核心包 -->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>${mybatis.version}</version>
-        </dependency>
-        <!-- mybatis/spring包 -->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-            <version>${mybatis-spring.version}</version>
-        </dependency>
-        <!-- 导入Mysql数据库链接jar包 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql2java.version}</version>
-        </dependency>
-        <!--fastjson json数据包-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>${fastjson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-web</artifactId>
-            <version>${shiro.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-spring</artifactId>
             <version>${shiro.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>${spring-data.version}</version>
+        </dependency>
+
+        <!-- servlet******Begin -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>${servlet.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- servlet******Begin -->
+
+        <!-- druid******Begin -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <!-- druid******End -->
+
+        <!-- logback******Begin -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
         </dependency>
+        <!--<dependency>-->
+        <!--<groupId>ch.qos.logback</groupId>-->
+        <!--<artifactId>logback-access</artifactId>-->
+        <!--<version>${logback.version}</version>-->
+        <!--</dependency>-->
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
-            <scope>provided</scope>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <!-- 需要指定logback.xml文件位置时使用 -->
+        <!--<dependency>-->
+        <!--<groupId>org.logback-extensions</groupId>-->
+        <!--<artifactId>logback-ext-spring</artifactId>-->
+        <!--<version>${logback-spring.version}</version>-->
+        <!--</dependency>-->
+
+        <!-- logback******End -->
+
+        <!-- fastjson******Begin -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <!-- fastjson******End -->
+
+        <!-- mybatis******Begin -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis-spring.version}</version>
+        </dependency>
+        <!-- mybatis******End -->
+
+        <!-- mysql驱动******Begin -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql2java.version}</version>
+        </dependency>
+        <!-- mysql驱动******End -->
+
+        <!-- Spring******Begin -->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework</groupId>-->
+        <!--<artifactId>spring-core</artifactId>-->
+        <!--<version>${spring.version}</version>-->
+        <!--<exclusions>-->
+        <!--<exclusion>-->
+        <!--<groupId>commons-logging</groupId>-->
+        <!--<artifactId>commons-logging</artifactId>-->
+        <!--</exclusion>-->
+        <!--</exclusions>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework</groupId>-->
+        <!--<artifactId>spring-context</artifactId>-->
+        <!--<version>${spring.version}</version>-->
+        <!--<exclusions>-->
+        <!--<exclusion>-->
+        <!--<groupId>org.springframework</groupId>-->
+        <!--<artifactId>spring-core</artifactId>-->
+        <!--</exclusion>-->
+        <!--</exclusions>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework</groupId>-->
+        <!--<artifactId>spring-aop</artifactId>-->
+        <!--<version>${spring.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework</groupId>-->
+        <!--<artifactId>spring-web</artifactId>-->
+        <!--<version>${spring.version}</version>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- Spring******End -->
+
+        <!-- Junit******Begin -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Junit******End -->
 
     </dependencies>
 

@@ -27,6 +27,7 @@
         <module>learnDBPool</module>
         <module>bookRead</module>
         <module>springBase</module>
+        <module>other</module>
     </modules>
 
     <properties>

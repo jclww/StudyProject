@@ -5,8 +5,80 @@
     <!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
     <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
 
+
+    <bean name="shiroFilterChainDefinitions" class="java.lang.String">
+        <constructor-arg>
+            <value>
+                /receiver/typeProvinceData = anon
+                /receiver/typeCityData = anon
+                /receiver/typeAreaData = anon
+                /receiver/checkTokenExpire = anon
+                /receiver/loadReceiverData = anon
+                /receiver/saveAddressData = anon
+                /mobile/** = anon
+                /assets/** = anon
+                /res/** = anon
+                /login = authc
+                /logout = logout
+                /** = user
+            </value>
+        </constructor-arg>
+    </bean>
+
+    <!-- 安全认证过滤器 -->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager" />
+        <property name="loginUrl" value="/login" />
+        <property name="successUrl" value="/index" />
+        <property name="unauthorizedUrl" value="/unauthorized" />
+        <!--<property name="filters">-->
+            <!--<map>-->
+                <!--<entry key="authc" value-ref="formAuthenticationFilter"/>-->
+            <!--</map>-->
+        <!--</property>-->
+        <property name="filterChainDefinitions">
+            <ref bean="shiroFilterChainDefinitions"/>
+        </property>
+    </bean>
+
+    <!-- 定义Shiro安全管理配置 -->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="systemAuthorizingRealm" />
+        <property name="sessionManager" ref="sessionManager" />
+        <property name="cacheManager" ref="shiroCacheManager" />
+    </bean>
+
+
+    <bean id="systemAuthorizingRealm" class="com.lww.shiro.security.SystemAuthorizingRealm">
+        <!-- 配置密码匹配器 -->
+        <property name="credentialsMatcher" ref="credentialsMatcher"/>
+
+        <property name="authorizationCacheName" value=""/>
+    </bean>
+
     <!-- 数据库保存的密码是使用MD5算法加密的，所以这里需要配置一个密码匹配对象 -->
     <bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.Md5CredentialsMatcher"/>
+
+
+    <!-- 自定义会话管理配置 -->
+    <bean id="sessionManager" class="com.hiveview.admin.common.security.shiro.session.SessionManager">
+        <property name="sessionDAO" ref="sessionDAO"/>
+
+        <!-- 会话超时时间，单位：毫秒  -->
+        <property name="globalSessionTimeout" value="${session.sessionTimeout}"/>
+
+        <!-- 定时清理失效会话, 清理用户直接关闭浏览器造成的孤立会话   -->
+        <!--<property name="sessionValidationInterval" value="${session.sessionTimeoutClean}"/>-->
+        <property name="sessionValidationSchedulerEnabled" value="false"/>
+
+        <property name="sessionIdCookie" ref="sessionIdCookie"/>
+        <property name="sessionIdCookieEnabled" value="true"/>
+    </bean>
+
+
+
+
+
     <bean id="myRealm" class="com.lww.shiro.security.DefinedRealm"/>
     <!-- 缓存管理 -->
     <!--<bean id="cacheManager" class="org.apache.shiro.cache.MemoryConstrainedCacheManager"/>-->
@@ -23,16 +95,16 @@
         <!--<property name="cacheManager" ref="cacheManager"/>-->
     </bean>
     <!-- Shiro权限过滤过滤器定义 -->
-    <bean name="shiroFilterChainDefinitions" class="java.lang.String">
-        <constructor-arg>
-            <value>
-                <!--/admin=authc,roles[admin]-->
-                /login = authc
-                /dologin = anon
-                /** = authc
-            </value>
-        </constructor-arg>
-    </bean>
+    <!--<bean name="shiroFilterChainDefinitions" class="java.lang.String">-->
+        <!--<constructor-arg>-->
+            <!--<value>-->
+                <!--&lt;!&ndash;/admin=authc,roles[admin]&ndash;&gt;-->
+                <!--/login = authc-->
+                <!--/dologin = anon-->
+                <!--/** = authc-->
+            <!--</value>-->
+        <!--</constructor-arg>-->
+    <!--</bean>-->
 
     <!-- 安全认证过滤器 -->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
