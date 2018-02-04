@@ -22,11 +22,11 @@
 
 
 </body>
-<%--<script src="/js/chart.js"></script>--%>
-<script src="/js/Chart.bundle.min.js"></script>
-        <script src="/js/utils.js"></script>
-<%--<script src="https://cdn.bootcss.com/Chart.js/2.5.0/Chart.bundle.min.js"></script>--%>
-<script>
+<%--<spring.script src="/js/chart.js"></spring.script>--%>
+<spring.script src="/js/Chart.bundle.min.js"></spring.script>
+        <spring.script src="/js/utils.js"></spring.script>
+<%--<spring.script src="https://cdn.bootcss.com/Chart.js/2.5.0/Chart.bundle.min.js"></spring.script>--%>
+<spring.script>
     var lineChartData = {
         labels: ["2017-07-31 17:50:30", "2017-07-31 17:50:30", "2017-07-31 17:50:30", "2017-07-31 17:50:30", "2017-07-31 17:50:30", "2017-07-31 17:50:30", "2017-07-31 17:50:30"],
         datasets: [{
@@ -93,5 +93,5 @@
 
         window.myLine.update();
     });
-</script>
+</spring.script>
 </html>

@@ -28,6 +28,7 @@
         <module>bookRead</module>
         <module>springBase</module>
         <module>other</module>
+        <module>test</module>
     </modules>
 
     <properties>

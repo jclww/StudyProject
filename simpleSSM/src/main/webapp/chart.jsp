@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Line Chart</title>
-    <script src="js/chart.js"></script>
+    <spring.script src="js/chart.js"></spring.script>
     <meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
     <style>
         canvas{
@@ -13,7 +13,7 @@
 <canvas id="canvas" height="450" width="600"></canvas>
 
 
-<script>
+<spring.script>
 
     var lineChartData = {
         // x轴的标示
@@ -47,6 +47,6 @@
 
     var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Line(lineChartData);
 
-</script>
+</spring.script>
 </body>
 </html>
