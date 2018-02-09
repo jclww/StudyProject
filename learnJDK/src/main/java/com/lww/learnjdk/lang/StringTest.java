@@ -42,5 +42,39 @@ public class StringTest {
         String str =  String.format(RELEASE_REASON, dates, "客户不需要","客户不需要");
 
         System.out.println(str);
+
+
+
+        for (int month = 0; month < 12; month++) {
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    System.out.println(month + "月有31天");
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    System.out.println(month + "月有30天");
+                    break;
+                default:
+                    System.out.println(month + "月有28天");
+            }
+        }
+    }
+    /**
+     * 释放商机时跟进记录文案
+     * @param timeStamp
+     * @param reason
+     * @param context
+     * @return
+     */
+    public static String buildReleaseReason(Long timeStamp, String reason, String context) {
+        return String.format(RELEASE_REASON, timeStamp, reason, context);
     }
 }
