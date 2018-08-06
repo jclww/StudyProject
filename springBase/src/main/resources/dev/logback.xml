@@ -42,12 +42,12 @@
     <!--</filter>-->
     <!--</appender>-->
 
-    <logger name="org.springframework" level="INFO"/>
+    <logger name="org.springframework" level="TRACE"/>
 
     <!-- 日志输出级别 -->
-    <root level="DEBUG">
+    <root level="TRACE">
         <appender-ref ref="STDOUT" />
-        <appender-ref ref="fileAppender"/>
+        <!--<appender-ref ref="fileAppender"/>-->
         <!--<appender-ref ref="stashAppender"/>-->
     </root>
 </configuration>

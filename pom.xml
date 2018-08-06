@@ -29,6 +29,7 @@
         <module>springBase</module>
         <module>other</module>
         <module>test</module>
+        <module>spring5</module>
     </modules>
 
     <properties>

@@ -1,9 +1,11 @@
 package com.lww.springbase.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.lww.springbase.enity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,5 +26,12 @@ public class HelloController {
         logger.info("asdasdas");
         String str = "sadsa";
         return JSON.toJSONString(str);
+    }
+
+    @RequestMapping("/post")
+    @ResponseBody
+    public String postTest(@RequestBody User user) {
+
+        return "success";
     }
 }

@@ -15,7 +15,7 @@ public class IOServer {
         InputStream in = null;
         try
         {
-            serverSocket = new ServerSocket(8080);
+            serverSocket = new ServerSocket(10086);
             int recvMsgSize = 0;
             byte[] recvBuf = new byte[1024];
             System.out.println("1111");
