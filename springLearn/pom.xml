@@ -15,6 +15,25 @@
     <spring.version>4.3.9.RELEASE</spring.version>
     </properties>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.13</version>
+        </dependency>
+
+        <!-- logback -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+        <!-- -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
         <!-- spring核心包 -->
         <dependency>
             <groupId>org.springframework</groupId>
