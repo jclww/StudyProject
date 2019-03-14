@@ -7,7 +7,7 @@ import net.sf.cglib.core.DebuggingClassWriter;
  */
 public class TestCGlib {
     public static void main(String[] a) throws Exception {
-        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "E:\\cglib");
+        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "/data/cglib");
 
         CGlibProxy cglib = new CGlibProxy();
         SomeClass businessObject = (SomeClass) cglib.getInstance(new SomeClass());

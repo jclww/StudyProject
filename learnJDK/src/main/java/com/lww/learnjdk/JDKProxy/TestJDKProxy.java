@@ -22,7 +22,7 @@ public class TestJDKProxy {
 
         // 调用代理对象的方法
         proxy.say();
-        writeProxyClassToHardDisk("E:/$Proxy11.class");
+        writeProxyClassToHardDisk("/data/$Proxy11.class");
     }
     public static void writeProxyClassToHardDisk(String path) {
         byte[] classFile = ProxyGenerator.generateProxyClass("$Proxy11", ServiceImpl.class.getInterfaces());

@@ -15,6 +15,9 @@ public class EnumTest {
         System.out.println(TestEnum.SELECTE.ordinal());
         System.out.println(TestEnum.ADD.toString());
 
+        TestEnum.ADD.setName("测试那么");
+        System.out.println(TestEnum.ADD.getName());
+
 
         TestEnum[] testEnums = TestEnum.values();
         for (TestEnum testEnum: testEnums) {

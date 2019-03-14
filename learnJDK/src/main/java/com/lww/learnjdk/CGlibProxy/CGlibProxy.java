@@ -19,7 +19,6 @@ public class CGlibProxy implements MethodInterceptor {
 
         enhancer.setSuperclass(this.target.getClass());
         enhancer.setCallback(this);
-
         return enhancer.create();
     }
 

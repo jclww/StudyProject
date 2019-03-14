@@ -1,5 +1,7 @@
 package com.lww.ssm.entity;
 
+import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +12,7 @@ public class Role {
     private Integer id;
     private String rolename;
     private List<Permission> permissionList;//一个角色对应多个权限
-    private List<User> userList;//一个角色对应多个用户
+    private List<BIConversion.User> userList;//一个角色对应多个用户
     public Integer getId() {
         return id;
     }
@@ -30,10 +32,10 @@ public class Role {
     public void setPermissionList(List<Permission> permissionList) {
         this.permissionList = permissionList;
     }
-      public List<User> getUserList() {
+      public List<BIConversion.User> getUserList() {
         return userList;
     }
-    public void setUserList(List<User> userList) {
+    public void setUserList(List<BIConversion.User> userList) {
         this.userList = userList;
     }
 

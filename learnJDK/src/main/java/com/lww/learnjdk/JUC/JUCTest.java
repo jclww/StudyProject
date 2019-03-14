@@ -13,6 +13,5 @@ public class JUCTest {
         ExecutorService scheduledService = Executors.newScheduledThreadPool(8);
         ExecutorService singleService = Executors.newSingleThreadExecutor();
 
-
     }
 }
