@@ -24,6 +24,7 @@ public class SecureChatClientHandler extends SimpleChannelInboundHandler<String>
     public void channelInactive(ChannelHandlerContext ctx)  {
         try {
             System.out.println(" 走到了  注销 ");
+            ctx.channel().closeFuture().sync();
         }catch(Exception e){
             System.out.println("链接关闭时 发生异常 ");
         }

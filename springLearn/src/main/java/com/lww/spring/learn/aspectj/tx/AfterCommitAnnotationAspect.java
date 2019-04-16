@@ -21,7 +21,7 @@ public class AfterCommitAnnotationAspect {
         this.afterCommitExecutor = afterCommitExecutor;
     }
 
-    @Around(value = "@annotation(com.youzan.crm.biz.tx.AfterCommit)", argNames = "pjp")
+    @Around(value = "@annotation(com.xxx.crm.biz.tx.AfterCommit)", argNames = "pjp")
     public Object aroundAdvice(final ProceedingJoinPoint pjp) {
         afterCommitExecutor.execute(new PjpAfterCommitRunnable(pjp));
         return null;

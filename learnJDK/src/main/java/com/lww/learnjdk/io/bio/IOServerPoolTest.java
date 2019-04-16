@@ -24,7 +24,7 @@ public class IOServerPoolTest {
         //定义一个容量为50的线程
         ExecutorService service = Executors.newFixedThreadPool(50);
         try {
-            serverSocket = new ServerSocket(8080);
+            serverSocket = new ServerSocket(10086);
             while(true){
                 System.out.println("wait receive message from client...");
                 //接收客户端连接的socket对象

@@ -1,4 +1,4 @@
-package com.lww.immutable;
+package com.lww.twitter;
 
 import java.time.LocalDate;
 

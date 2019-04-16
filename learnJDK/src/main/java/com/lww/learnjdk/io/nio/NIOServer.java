@@ -7,6 +7,7 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
+import java.util.Arrays;
 import java.util.Iterator;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Iterator;
  */
 public class NIOServer {
     private static final int BUF_SIZE=1024;
-    private static final int PORT = 8080;
+    private static final int PORT = 10086;
     private static final int TIMEOUT = 3000;
 
     public static void main(String[] args)
@@ -36,6 +37,10 @@ public class NIOServer {
         while(bytesRead>0){
             buf.flip();
             while(buf.hasRemaining()){
+//                System.out.println(Arrays.toString(buf.array()));
+//                System.out.println(new String(buf.array()));
+
+
                 System.out.print((char)buf.get());
             }
             System.out.println();
