@@ -1,11 +1,9 @@
 <?xml version="1.0"?>
 <configuration>
-    <include resource="com/youzan/enable/crm/tuoke/logging/logback/mail-listen-log.xml" />
 
-    <!--加载外部属性文件-->
-    <property resource="application.properties" />
     <!-- 定义变量后，可以使“${}”来使用变量 -->
     <property name="APP_Name" value="LWWLogProject" />
+    <property name="log.path" value="log" />
 
     <!-- 使用<contextName>设置名字，用于区分不同应用程序的记录。 -->
     <contextName>${APP_Name}</contextName>

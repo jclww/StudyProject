@@ -1,0 +1,48 @@
+package com.lww.pattern.states;
+
+public class StrategyPattern {
+    public static void main(String[] args) {
+        StrategyManage strategyManage = new StrategyManage();
+        strategyManage.doSomeThing(new StrategyA(), "emmm");
+        strategyManage.doSomeThing(new StrategyB(), "emmm");
+        strategyManage.doSomeThing(new StrategyC(), "emmm");
+    }
+}
+
+class StrategyManage {
+
+    private State state = null;
+
+    public void doSomeThing(Strategy strategy, String param) {
+        strategy.doSomeThing(param);
+    }
+
+}
+
+interface Strategy {
+    void doSomeThing(String param);
+}
+
+class StrategyA implements Strategy {
+
+    @Override
+    public void doSomeThing(String param) {
+        System.out.println("StrategyA : " + param);
+    }
+}
+
+class StrategyB implements Strategy {
+
+    @Override
+    public void doSomeThing(String param) {
+        System.out.println("StrategyB : " + param);
+    }
+}
+
+class StrategyC implements Strategy {
+
+    @Override
+    public void doSomeThing(String param) {
+        System.out.println("StrategyC : " + param);
+    }
+}

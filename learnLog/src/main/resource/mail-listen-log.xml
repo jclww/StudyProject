@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<included>
+    <property name="TRACK_APP_NAME" value="${TRACK_APP_NAME:-${springApplicationName}}" />
+
+    <!-- Mail 监听log  -->
+    <appender name="MAIL-LISTEN" class="com.youzan.enable.crm.tuoke.service.log.MailAppender">
+        <app>${TRACK_APP_NAME}</app>
+    </appender>
+
+</included>
