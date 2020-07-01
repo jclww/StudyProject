@@ -18,7 +18,7 @@
         <!-- mybatis-spring版本号 -->
         <mybatis-spring.version>1.3.0</mybatis-spring.version>
         <!-- mysql2java版本号-->
-        <mysql2java.version>5.1.40</mysql2java.version>
+        <mysql2java.version>8.0.16</mysql2java.version>
         <!--数据库连接池版本号-->
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <!-- log4j日志文件管理包版本 -->
