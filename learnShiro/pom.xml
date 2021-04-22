@@ -34,7 +34,7 @@
 
         <jedis.version>2.9.0</jedis.version>
         <spring-data.version>2.0.0.RELEASE</spring-data.version>
-        <shiro.version>1.4.0</shiro.version>
+        <shiro.version>1.7.0</shiro.version>
         <lombok.version>1.16.18</lombok.version>
     </properties>
     <dependencies>
